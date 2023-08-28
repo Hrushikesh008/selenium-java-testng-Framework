@@ -1,0 +1,7 @@
+<seleniumeasyapp>
+
+	<edgeDriverPath>Browser/msedgedriver.exe</edgeDriverPath>
+	<chromeDriverPath>Browser/chromedriver.exe</chromeDriverPath>
+	<browser>Edge</browser>
+
+</seleniumeasyapp>

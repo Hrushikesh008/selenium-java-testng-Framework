@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="9" passed="0" failed="9" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-26T15:04:23 IST" name="Default suite" finished-at="2023-08-26T15:05:04 IST" duration-ms="41193">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.FrameworkTestRunner@117159c0]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-08-26T15:04:23 IST" name="Default test" finished-at="2023-08-26T15:05:04 IST" duration-ms="41193">
+      <class name="tests.FrameworkTestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:tests.FrameworkTestRunner@117159c0]" started-at="2023-08-26T15:04:23 IST" name="setUpClass" finished-at="2023-08-26T15:04:24 IST" duration-ms="1193" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@13e698c7]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.FrameworkTestRunner@117159c0]" started-at="2023-08-26T15:04:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-26T15:04:52 IST" duration-ms="27644" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify selenium easy range slider page features"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify selenium easy range slider page features"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at actions.ActionPage.dataFromPropertyFile(ActionPage.java:158)
+at pages.HomePage.getExpatedTitle(HomePage.java:19)
+at steps.SeleniumEasyHomePageSteps.user_is_on_selenium_easy_home_page_verifying_page_title(SeleniumEasyHomePageSteps.java:22)
+at ✽.user is on selenium easy homePage verifying page title(file:///C:/Users/2457221/eclipse-workspace/Framework-selenium-java-testng2/src/test/resources/Features/SeleniumEasyRangeSliderPage.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.FrameworkTestRunner@117159c0]" started-at="2023-08-26T15:04:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-26T15:05:00 IST" duration-ms="35712" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify two input fild in selenium easy simple form demo page features"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify selenium easy simple form demo page features"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at actions.ActionPage.dataFromPropertyFile(ActionPage.java:158)
+at pages.HomePage.getExpatedTitle(HomePage.java:19)
+at steps.SeleniumEasyHomePageSteps.user_is_on_selenium_easy_home_page_verifying_page_title(SeleniumEasyHomePageSteps.java:22)
+at ✽.user is on selenium easy homePage verifying page title(file:///C:/Users/2457221/eclipse-workspace/Framework-selenium-java-testng2/src/test/resources/Features/SeleniumEasySimpleFormDemoPage.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.FrameworkTestRunner@117159c0]" started-at="2023-08-26T15:04:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-26T15:05:00 IST" duration-ms="35556" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify single input fild in selenium easy simple form demo page features"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify selenium easy simple form demo page features"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at actions.ActionPage.dataFromPropertyFile(ActionPage.java:158)
+at pages.HomePage.getExpatedTitle(HomePage.java:19)
+at steps.SeleniumEasyHomePageSteps.user_is_on_selenium_easy_home_page_verifying_page_title(SeleniumEasyHomePageSteps.java:22)
+at ✽.user is on selenium easy homePage verifying page title(file:///C:/Users/2457221/eclipse-workspace/Framework-selenium-java-testng2/src/test/resources/Features/SeleniumEasySimpleFormDemoPage.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.FrameworkTestRunner@117159c0]" started-at="2023-08-26T15:04:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-26T15:04:52 IST" duration-ms="27417" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify selenium easy input form submit page features CSV file"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify selenium easy InputFormSubmitPage features"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at actions.ActionPage.dataFromPropertyFile(ActionPage.java:158)
+at pages.HomePage.getExpatedTitle(HomePage.java:19)
+at steps.SeleniumEasyHomePageSteps.user_is_on_selenium_easy_home_page_verifying_page_title(SeleniumEasyHomePageSteps.java:22)
+at ✽.user is on selenium easy homePage verifying page title(file:///C:/Users/2457221/eclipse-workspace/Framework-selenium-java-testng2/src/test/resources/Features/SeleniumEasyInputFormSubmit.feature:24)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.FrameworkTestRunner@117159c0]" started-at="2023-08-26T15:04:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-26T15:05:04 IST" duration-ms="39222" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify selenium easy input form submit page features cucumber data table"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify selenium easy InputFormSubmitPage features"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at actions.ActionPage.dataFromPropertyFile(ActionPage.java:158)
+at pages.HomePage.getExpatedTitle(HomePage.java:19)
+at steps.SeleniumEasyHomePageSteps.user_is_on_selenium_easy_home_page_verifying_page_title(SeleniumEasyHomePageSteps.java:22)
+at ✽.user is on selenium easy homePage verifying page title(file:///C:/Users/2457221/eclipse-workspace/Framework-selenium-java-testng2/src/test/resources/Features/SeleniumEasyInputFormSubmit.feature:42)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.FrameworkTestRunner@117159c0]" started-at="2023-08-26T15:04:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-26T15:05:00 IST" duration-ms="35871" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify selenium easy input form submitPage features property file"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify selenium easy InputFormSubmitPage features"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at actions.ActionPage.dataFromPropertyFile(ActionPage.java:158)
+at pages.HomePage.getExpatedTitle(HomePage.java:19)
+at steps.SeleniumEasyHomePageSteps.user_is_on_selenium_easy_home_page_verifying_page_title(SeleniumEasyHomePageSteps.java:22)
+at ✽.user is on selenium easy homePage verifying page title(file:///C:/Users/2457221/eclipse-workspace/Framework-selenium-java-testng2/src/test/resources/Features/SeleniumEasyInputFormSubmit.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.FrameworkTestRunner@117159c0]" started-at="2023-08-26T15:04:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-26T15:05:00 IST" duration-ms="35983" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify error message in selenium easy input form submit page features cucumber data table"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify selenium easy InputFormSubmitPage features"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at actions.ActionPage.dataFromPropertyFile(ActionPage.java:158)
+at pages.HomePage.getExpatedTitle(HomePage.java:19)
+at steps.SeleniumEasyHomePageSteps.user_is_on_selenium_easy_home_page_verifying_page_title(SeleniumEasyHomePageSteps.java:22)
+at ✽.user is on selenium easy homePage verifying page title(file:///C:/Users/2457221/eclipse-workspace/Framework-selenium-java-testng2/src/test/resources/Features/SeleniumEasyInputFormSubmit.feature:60)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.FrameworkTestRunner@117159c0]" started-at="2023-08-26T15:04:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-26T15:04:52 IST" duration-ms="27961" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify selenium easy radio buttons page features"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify selenium easy radio buttons page features"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at actions.ActionPage.dataFromPropertyFile(ActionPage.java:158)
+at pages.HomePage.getExpatedTitle(HomePage.java:19)
+at steps.SeleniumEasyHomePageSteps.user_is_on_selenium_easy_home_page_verifying_page_title(SeleniumEasyHomePageSteps.java:22)
+at ✽.user is on selenium easy homePage verifying page title(file:///C:/Users/2457221/eclipse-workspace/Framework-selenium-java-testng2/src/test/resources/Features/SeleniumEasyRadioButtons.feature:6)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.FrameworkTestRunner@117159c0]" started-at="2023-08-26T15:04:24 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-26T15:05:00 IST" duration-ms="35523" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Verify two input fild in selenium easy simple form demo page features"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Verify selenium easy simple form demo page features"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException
+at actions.ActionPage.dataFromPropertyFile(ActionPage.java:158)
+at pages.HomePage.getExpatedTitle(HomePage.java:19)
+at steps.SeleniumEasyHomePageSteps.user_is_on_selenium_easy_home_page_verifying_page_title(SeleniumEasyHomePageSteps.java:22)
+at ✽.user is on selenium easy homePage verifying page title(file:///C:/Users/2457221/eclipse-workspace/Framework-selenium-java-testng2/src/test/resources/Features/SeleniumEasySimpleFormDemoPage.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.FrameworkTestRunner@117159c0]" started-at="2023-08-26T15:05:04 IST" name="tearDownClass" finished-at="2023-08-26T15:05:04 IST" duration-ms="682" status="FAIL">
+          <exception class="java.lang.RuntimeException">
+            <message>
+              <![CDATA[javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.RuntimeException: javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at io.cucumber.core.plugin.MessageFormatter.writeMessage(MessageFormatter.java:32)
+at io.cucumber.core.eventbus.AbstractEventPublisher.send(AbstractEventPublisher.java:51)
+at io.cucumber.core.eventbus.AbstractEventBus.send(AbstractEventBus.java:12)
+at io.cucumber.core.runtime.SynchronizedEventBus.send(SynchronizedEventBus.java:47)
+at io.cucumber.core.runtime.CucumberExecutionContext.emitTestRunFinished(CucumberExecutionContext.java:125)
+at io.cucumber.core.runtime.CucumberExecutionContext.finishTestRun(CucumberExecutionContext.java:105)
+at io.cucumber.testng.TestNGCucumberRunner.finish(TestNGCucumberRunner.java:145)
+at io.cucumber.testng.AbstractTestNGCucumberTests.tearDownClass(AbstractTestNGCucumberTests.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:385)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:321)
+at org.testng.internal.TestMethodWorker.invokeAfterClassMethods(TestMethodWorker.java:217)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:130)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1540)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1963)
+at java.base/sun.net.www.protocol.http.HttpURLConnection$10.run(HttpURLConnection.java:1958)
+at java.base/java.security.AccessController.doPrivileged(Native Method)
+at java.base/sun.net.www.protocol.http.HttpURLConnection.getChainedException(HttpURLConnection.java:1957)
+at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1525)
+at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1509)
+at java.base/java.net.HttpURLConnection.getResponseCode(HttpURLConnection.java:527)
+at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getResponseCode(HttpsURLConnectionImpl.java:329)
+at io.cucumber.core.plugin.UrlOutputStream.getResponseBody(UrlOutputStream.java:125)
+at io.cucumber.core.plugin.UrlOutputStream.sendRequest(UrlOutputStream.java:87)
+at io.cucumber.core.plugin.UrlOutputStream.close(UrlOutputStream.java:65)
+at java.base/sun.nio.cs.StreamEncoder.implClose(StreamEncoder.java:341)
+at java.base/sun.nio.cs.StreamEncoder.close(StreamEncoder.java:161)
+at java.base/java.io.OutputStreamWriter.close(OutputStreamWriter.java:258)
+at io.cucumber.core.plugin.MessageFormatter.writeMessage(MessageFormatter.java:29)
+... 33 more
+Caused by: javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:128)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:321)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:264)
+at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:259)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1329)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1204)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1151)
+at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:392)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:444)
+at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:421)
+at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:178)
+at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:164)
+at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1152)
+at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1063)
+at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:402)
+at java.base/sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:567)
+at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:185)
+at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1581)
+at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1509)
+at java.base/sun.net.www.protocol.http.HttpURLConnection.getHeaderFields(HttpURLConnection.java:3107)
+at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getHeaderFields(HttpsURLConnectionImpl.java:274)
+at io.cucumber.core.plugin.UrlOutputStream.getResponseBody(UrlOutputStream.java:124)
+... 39 more
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:385)
+at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:290)
+at java.base/sun.security.validator.Validator.validate(Validator.java:264)
+at java.base/sun.security.ssl.X509TrustManagerImpl.validate(X509TrustManagerImpl.java:321)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:221)
+at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:129)
+at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1313)
+... 56 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:380)
+... 62 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.RuntimeException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- tests.FrameworkTestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
