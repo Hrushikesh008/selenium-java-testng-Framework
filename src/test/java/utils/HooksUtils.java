@@ -1,25 +1,30 @@
 package utils;
 
+import actions.ActionPage;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
 public class HooksUtils {
-	BrowserFactory webDriver;
+	BrowserFactory driver;
+	ActionPage actionPage;
 
 	public HooksUtils(BrowserFactory webDriver) {
-		this.webDriver = webDriver;
+		this.driver = webDriver;
 	}
 
 	@Before
-	public void beforeSetup() {
+	public void before() {
 		Logger.info("Running before hooks to setup browser");
-		webDriver.WebDriverManager().manage().window().maximize();
+		driver.WebDriverManager().manage().window().maximize();
 	}
 
 	@After
-	public void quitApp() {
+	public void after() {
 		Logger.info("Running after hooks to close browser");
-		webDriver.WebDriverManager().close();
-		webDriver.WebDriverManager().quit();
+		try {
+			driver.WebDriverManager().quit();
+		} catch (Exception e) {
+			throw new AssertionError("Drive quit giving Exception", e);
+		}
 	}
 }

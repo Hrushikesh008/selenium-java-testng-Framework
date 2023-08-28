@@ -17,10 +17,10 @@ import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.io.FileHandler;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.FluentWait;
-
-import com.google.common.io.Files;
+import org.testng.ITestResult;
 
 import utils.BaseUtils;
 import utils.BrowserFactory;
@@ -28,14 +28,13 @@ import utils.Logger;
 
 public class ActionPage {
 	public WebDriver driver;
+	Properties p;
+	BaseUtils reader;
+	BaseUtils baseUtils;
 
 	public ActionPage(BrowserFactory webDriver) {
 		driver = webDriver.getDriver();
 	}
-
-	Properties p;
-	BaseUtils reader;
-	BaseUtils baseUtils;
 
 	// getURL
 	public void visit(String url) {
@@ -49,13 +48,13 @@ public class ActionPage {
 	public String GetTitle() {
 		return driver.getTitle();
 	}
-	// getText
 
+	// getText
 	public String getText(WebElement element) {
 		return element.getText();
 	}
-	// Assert
 
+	// Assert
 	public void AssertEquals(String expectedValue, String actualValue) {
 		try {
 			assertEquals(expectedValue, actualValue);
@@ -71,8 +70,8 @@ public class ActionPage {
 			throw new AssertionError("Actual value and experted value is not equal", e);
 		}
 	}
-	// wait
 
+	// wait
 	public WebElement WaitForElement(WebElement element) {
 		try {
 			FluentWait<WebDriver> wait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(30))
@@ -92,8 +91,8 @@ public class ActionPage {
 		}
 		return null;
 	}
-	// click
 
+	// click
 	public void clickWebElement(WebElement element) {
 		try {
 			element.click();
@@ -116,8 +115,8 @@ public class ActionPage {
 			Logger.logSevere(e);
 		}
 	}
-	// sendKey
 
+	// sendKey
 	public void sendKey(WebElement element, String key) {
 		try {
 			element.sendKeys(key);
@@ -133,8 +132,8 @@ public class ActionPage {
 			Logger.logSevere(e);
 		}
 	}
-	// higlight
 
+	// higlight
 	public void higlightElement(WebElement element) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red');", element);
@@ -146,14 +145,8 @@ public class ActionPage {
 		js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", element);
 		js.executeScript("arguments[0].removeAttribute('style', 'background: yellow; border: 2px solid red;');", element);
 	}
-	// screenshot
 
-	public void screenShot(String fileName) throws Exception {
-		File file = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		Files.copy(file, new File("ScreenShot/" + fileName));
-	}
 	// others
-
 	public String dataFromPropertyFile(String value) {
 		reader = new BaseUtils();
 		p = reader.getProperties();
@@ -212,8 +205,8 @@ public class ActionPage {
 			Logger.logSevere(e);
 		}
 	}
-	// encoder
 
+	// encoder
 	public static String getEncodedText(String value) {
 		byte[] encodedByte = Base64.getEncoder().encode(value.getBytes());
 		String encodedString = new String(encodedByte);
@@ -224,5 +217,19 @@ public class ActionPage {
 		byte[] decodedByte = Base64.getDecoder().decode(value.getBytes());
 		String decodedString = new String(decodedByte);
 		return decodedString;
+	}
+
+	// screenshot
+	public void screenshot(ITestResult result) {
+		if (ITestResult.FAILURE == result.getStatus()) {
+			TakesScreenshot ts = (TakesScreenshot) driver;
+			File source = ts.getScreenshotAs(OutputType.FILE);
+			try {
+				FileHandler.copy(source, new File("./Screenshots/" + result.getName() + ".png"));
+				System.out.println("Screenshot taken");
+			} catch (Exception e) {
+				System.out.println("Exception while taking screenshot " + e.getMessage());
+			}
+		}
 	}
 }

@@ -23,6 +23,9 @@
 		<cucumber-reporting.version>5.7.6</cucumber-reporting.version>
 		<maven-cucumber-reporting.version>5.7.6
 		</maven-cucumber-reporting.version>
+		<extentreports-cucumber7-adapter.version>1.14.0</extentreports-cucumber7-adapter.version>
+		<extentreports.version>5.1.0</extentreports.version>
+		<cucumber-picocontainer.version>7.13.0</cucumber-picocontainer.version>
 		<maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
 		<maven-surefire-plugin.version>3.1.2</maven-surefire-plugin.version>
 		<maven.compiler.source>1.8</maven.compiler.source>
@@ -104,6 +107,18 @@
 			<artifactId>maven-cucumber-reporting</artifactId>
 			<version>${maven-cucumber-reporting.version}</version>
 			<scope>compile</scope>
+		</dependency>
+		<dependency>
+			<groupId>tech.grasshopper</groupId>
+			<artifactId>extentreports-cucumber7-adapter</artifactId>
+			<version>${extentreports-cucumber7-adapter.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>${extentreports.version}</version>
 		</dependency>
 	</dependencies>
 	<!-- Maven sure fire plugin is used to follow the sequence of tests in testng.xml 
