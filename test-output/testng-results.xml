@@ -1,59 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="0" passed="0" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-28T11:11:35 IST" name="Default suite" finished-at="2023-08-28T11:12:05 IST" duration-ms="29969">
+  <suite started-at="2023-08-28T12:06:12 IST" name="Default suite" finished-at="2023-08-28T12:06:14 IST" duration-ms="1955">
     <groups>
       <group name="cucumber">
         <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.ReRun@645aa696]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
       </group> <!-- cucumber -->
     </groups>
-    <test started-at="2023-08-28T11:11:35 IST" name="Default test" finished-at="2023-08-28T11:12:05 IST" duration-ms="29969">
+    <test started-at="2023-08-28T12:06:12 IST" name="Default test" finished-at="2023-08-28T12:06:14 IST" duration-ms="1955">
       <class name="tests.ReRun">
-        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:tests.ReRun@645aa696]" started-at="2023-08-28T11:11:35 IST" name="setUpClass" finished-at="2023-08-28T11:11:38 IST" duration-ms="2812" status="PASS">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:tests.ReRun@645aa696]" started-at="2023-08-28T12:06:12 IST" name="setUpClass" finished-at="2023-08-28T12:06:13 IST" duration-ms="1260" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[org.testng.TestRunner@4bfa5eb9]]>
+                <![CDATA[org.testng.TestRunner@39651a82]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpClass -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.ReRun@645aa696]" started-at="2023-08-28T11:11:38 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-28T11:11:56 IST" duration-ms="18263" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify error message in selenium easy input form submit page features cucumber data table"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify selenium easy InputFormSubmitPage features"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:tests.ReRun@645aa696]" started-at="2023-08-28T11:11:56 IST" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-28T11:12:04 IST" duration-ms="8221" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA["Verify two input fild in selenium easy simple form demo page features"]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA["Verify selenium easy simple form demo page features"]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- runScenario -->
-        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.ReRun@645aa696]" started-at="2023-08-28T11:12:04 IST" name="tearDownClass" finished-at="2023-08-28T11:12:05 IST" duration-ms="622" status="PASS">
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:tests.ReRun@645aa696]" started-at="2023-08-28T12:06:13 IST" name="tearDownClass" finished-at="2023-08-28T12:06:14 IST" duration-ms="651" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDownClass -->

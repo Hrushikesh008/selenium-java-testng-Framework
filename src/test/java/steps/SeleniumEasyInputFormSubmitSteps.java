@@ -10,11 +10,11 @@ import utils.BrowserFactory;
 import io.cucumber.datatable.DataTable;
 
 public class SeleniumEasyInputFormSubmitSteps {
+	InputFormSubmit inputFormSubmit;
+
 	public SeleniumEasyInputFormSubmitSteps(BrowserFactory webDriver) {
 		this.inputFormSubmit = new InputFormSubmit(webDriver);
 	}
-
-	InputFormSubmit inputFormSubmit;
 
 	@Test
 	@And("user verifys input form submit page title")

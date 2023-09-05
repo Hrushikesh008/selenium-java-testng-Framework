@@ -6,13 +6,16 @@ import utils.BrowserFactory;
 import utils.Logger;
 
 public class RadioButtons extends ActionPage {
+	private String radioButton;
+	private By result;
+	private By button;
+
 	public RadioButtons(BrowserFactory webDriver) {
 		super(webDriver);
+		this.radioButton = "//*[@class='panel-body']/div/label/input";
+		this.result = By.xpath("//p[@class='groupradiobutton']");
+		this.button = By.xpath("//button[@onclick='getValues();']");
 	}
-
-	private String radioButton = "//*[@class='panel-body']/div/label/input";
-	private By result = By.xpath("//p[@class='groupradiobutton']");
-	private By button = By.xpath("//button[@onclick='getValues();']");
 
 	public String getTitle() {
 		return GetTitle();

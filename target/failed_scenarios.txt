@@ -1,2 +1,0 @@
-file:src/test/resources/Features/SeleniumEasySimpleFormDemoPage.feature:26
-file:src/test/resources/Features/SeleniumEasyInputFormSubmit.feature:58

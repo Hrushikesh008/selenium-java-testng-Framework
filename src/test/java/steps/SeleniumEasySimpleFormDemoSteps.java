@@ -11,11 +11,11 @@ import pages.SimpleFormDemo;
 import utils.BrowserFactory;
 
 public class SeleniumEasySimpleFormDemoSteps {
+	SimpleFormDemo simpleFormDemo;
+
 	public SeleniumEasySimpleFormDemoSteps(BrowserFactory webDriver) {
 		this.simpleFormDemo = new SimpleFormDemo(webDriver);
 	}
-
-	SimpleFormDemo simpleFormDemo;
 
 	@Test
 	@And("user verifys simple form demo page title")

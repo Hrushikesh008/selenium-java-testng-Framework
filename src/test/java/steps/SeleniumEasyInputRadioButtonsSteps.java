@@ -10,12 +10,11 @@ import pages.RadioButtons;
 import utils.BrowserFactory;
 
 public class SeleniumEasyInputRadioButtonsSteps {
+	RadioButtons radioButtons;
 
 	public SeleniumEasyInputRadioButtonsSteps(BrowserFactory webDriver) {
 		this.radioButtons = new RadioButtons(webDriver);
 	}
-
-	RadioButtons radioButtons;
 
 	@Test
 	@When("user verifys radio buttons page title")

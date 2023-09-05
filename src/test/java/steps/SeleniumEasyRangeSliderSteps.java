@@ -9,15 +9,13 @@ import io.cucumber.java.en.*;
 import pages.RangerSlide;
 
 public class SeleniumEasyRangeSliderSteps {
+	RangerSlide rangerSlide;
 
 	public SeleniumEasyRangeSliderSteps(BrowserFactory webDriver) {
 		this.rangerSlide = new RangerSlide(webDriver);
 	}
 
-	RangerSlide rangerSlide;
-
 	@Test
-
 	@Given("user verifys range slider page title")
 	public void user_verifys_range_slider_page_title() {
 		String Actualtitle = rangerSlide.getTitle();

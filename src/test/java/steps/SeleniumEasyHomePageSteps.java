@@ -9,11 +9,11 @@ import pages.HomePage;
 import utils.BrowserFactory;
 
 public class SeleniumEasyHomePageSteps {
+	HomePage homePage;
+
 	public SeleniumEasyHomePageSteps(BrowserFactory webDriver) {
 		this.homePage = new HomePage(webDriver);
 	}
-
-	HomePage homePage;
 
 	@Test
 	@And("user is on selenium easy homePage verifying page title")

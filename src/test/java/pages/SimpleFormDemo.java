@@ -6,19 +6,26 @@ import utils.BrowserFactory;
 import utils.Logger;
 
 public class SimpleFormDemo extends ActionPage {
+	private By txt_message;
+	private By btn_showMessage;
+	private By yourMessage;
+	private By message_A;
+	private By message_B;
+	private By btn_GetTotal;
+	private By total;
+
 	public SimpleFormDemo(BrowserFactory webDriver) {
 		super(webDriver);
+		// Single Input Field
+		this.txt_message = By.xpath("//input[@id='user-message']");
+		this.btn_showMessage = By.xpath("//form[@id='get-input']/button");
+		this.yourMessage = By.xpath("//span[@id='display']");
+		// Two Input Field
+		this.message_A = By.xpath("//form[@id='gettotal']/div[1]/input");
+		this.message_B = By.xpath("//form[@id='gettotal']/div[2]/input");
+		this.btn_GetTotal = By.xpath("//form[@id='gettotal']/button");
+		this.total = By.xpath("//span[@id='displayvalue']");
 	}
-
-	// Single Input Field
-	private By txt_message = By.xpath("//input[@id='user-message']");
-	private By btn_showMessage = By.xpath("//form[@id='get-input']/button");
-	private By yourMessage = By.xpath("//span[@id='display']");
-	// Two Input Field
-	private By message_A = By.xpath("//form[@id='gettotal']/div[1]/input");
-	private By message_B = By.xpath("//form[@id='gettotal']/div[2]/input");
-	private By btn_GetTotal = By.xpath("//form[@id='gettotal']/button");
-	private By total = By.xpath("//span[@id='displayvalue']");
 
 	public String getTitle() {
 		return GetTitle();

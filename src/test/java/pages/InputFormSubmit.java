@@ -15,15 +15,18 @@ import utils.Logger;
 
 public class InputFormSubmit extends ActionPage {
 	BaseUtils BaseUtils;
+	private String stateXpath;
+	private int errerExpacted;
+	private By Send;
+	private By error;
 
 	public InputFormSubmit(BrowserFactory webDriver) {
 		super(webDriver);
+		this.stateXpath = "//select[@name='state']/option";
+		this.errerExpacted = 0;
+		this.Send = By.xpath("//button[@class='btn btn-default']");
+		this.error = By.xpath("//div[@class='form-group has-feedback has-error']//label");
 	}
-
-	private int errerExpacted = 0;
-	private By Send = By.xpath("//button[@class='btn btn-default']");
-	private String stateXpath = "//select[@name='state']/option";
-	private By error = By.xpath("//div[@class='form-group has-feedback has-error']//label");
 
 	private WebElement inputValuePD() {
 		return driver.findElement(By.xpath(

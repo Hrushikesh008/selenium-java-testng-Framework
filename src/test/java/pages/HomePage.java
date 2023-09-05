@@ -5,11 +5,12 @@ import utils.BrowserFactory;
 import utils.Logger;
 
 public class HomePage extends ActionPage {
+	private String dropDown;
+
 	public HomePage(BrowserFactory webDriver) {
 		super(webDriver);
+		this.dropDown = "//nav//li";
 	}
-
-	private String xpath = "//nav//li";
 
 	public String getTitle() {
 		return GetTitle();
@@ -21,7 +22,7 @@ public class HomePage extends ActionPage {
 
 	public void clickSimpleFormDemo() {
 		try {
-			dropdown(xpath, "Input Forms", "Simple Form Demo");
+			dropdown(dropDown, "Input Forms", "Simple Form Demo");
 		} catch (Exception e) {
 			Logger.logSevere(e);
 		}
@@ -29,7 +30,7 @@ public class HomePage extends ActionPage {
 
 	public void clickDragandDrop() {
 		try {
-			dropdown(xpath, "Progress Bars", "Drag & Drop Sliders");
+			dropdown(dropDown, "Progress Bars", "Drag & Drop Sliders");
 		} catch (Exception e) {
 			Logger.logSevere(e);
 		}
@@ -37,7 +38,7 @@ public class HomePage extends ActionPage {
 
 	public void clickInputFormSubmit() {
 		try {
-			dropdown(xpath, "Input Forms", "Input Form Submit");
+			dropdown(dropDown, "Input Forms", "Input Form Submit");
 		} catch (Exception e) {
 			Logger.logSevere(e);
 		}
@@ -45,7 +46,7 @@ public class HomePage extends ActionPage {
 
 	public void clickRadioButton() {
 		try {
-			dropdown(xpath, "Input Forms", "Radio Buttons Demo");
+			dropdown(dropDown, "Input Forms", "Radio Buttons Demo");
 		} catch (Exception e) {
 			Logger.logSevere(e);
 		}
