@@ -1,14 +1,16 @@
 Feature: Verify selenium easy radio buttons page features
 
+  Background: User navigates and verifys title
+    Given I navigate to the "http://demo.seleniumeasy.com/" page
+    And user is on selenium easy homePage verifying page title
+    And user navigate to radio buttons page
+    And user verifys radio buttons page title
+
   @Test
   Scenario Outline: Verify selenium easy radio buttons page features
-    Given I navigate to the "http://demo.seleniumeasy.com/" page
-    Given user is on selenium easy homePage verifying page title
-    When user navigate to radio buttons page
-    And user verifys radio buttons page title
-    Then user clicks "<ageGroup>" and "<sex>" in radio buttons page
+    When user clicks "<ageGroup>" and "<sex>" in radio buttons page
     And user clicks on get value button
-    And user verifys "<sucessMessageForSex>" and "<sucessMessageForAgeGroup>"
+    Then user verifys "<sucessMessageForSex>" and "<sucessMessageForAgeGroup>"
 
     Examples: 
       | ageGroup | sex  | sucessMessageForSex | sucessMessageForAgeGroup |

@@ -1,11 +1,13 @@
 Feature: Verify selenium easy InputFormSubmitPage features
 
-  @Test
-  Scenario: Verify selenium easy input form submitPage features property file
+  Background: User navigates and verifys title
     Given I navigate to the "http://demo.seleniumeasy.com/" page
     And user is on selenium easy homePage verifying page title
     And user navigate to input form submit page
     And user verifys input form submit page title
+
+  @Test
+  Scenario: Verify selenium easy input form submitPage features property file
     When user fills input text box from property file
       | fieldName  | inputValue |
       | First Name | FirstName  |
@@ -20,10 +22,6 @@ Feature: Verify selenium easy InputFormSubmitPage features
 
   @Test
   Scenario: Verify selenium easy input form submit page features CSV file
-    Given I navigate to the "http://demo.seleniumeasy.com/" page
-    And user is on selenium easy homePage verifying page title
-    And user navigate to input form submit page
-    And user verifys input form submit page title
     When user fills input text box from CSV files
       | fieldName  | inputValueCSV |
       | First Name | FirstName     |
@@ -38,10 +36,6 @@ Feature: Verify selenium easy InputFormSubmitPage features
 
   @Test
   Scenario: Verify selenium easy input form submit page features cucumber data table
-    Given I navigate to the "http://demo.seleniumeasy.com/" page
-    And user is on selenium easy homePage verifying page title
-    And user navigate to input form submit page
-    And user verifys input form submit page title
     When user fills input in text box
       | fieldName  | inputValue       |
       | First Name | Muhammad         |
@@ -56,10 +50,6 @@ Feature: Verify selenium easy InputFormSubmitPage features
 
   @Test
   Scenario Outline: Verify error message in selenium easy input form submit page features cucumber data table
-    Given I navigate to the "http://demo.seleniumeasy.com/" page
-    And user is on selenium easy homePage verifying page title
-    And user navigate to input form submit page
-    And user verifys input form submit page title
     When user fills input in text box
       | fieldName  | inputValue |
       | First Name | M          |
