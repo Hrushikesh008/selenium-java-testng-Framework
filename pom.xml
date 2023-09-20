@@ -4,11 +4,11 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>Framework-selenium-java-testng</groupId>
-	<artifactId>Framework-selenium-java-testng</artifactId>
+	<groupId>Framework-selenium-java-testng2</groupId>
+	<artifactId>Framework-selenium-java-testng2</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 
-	<properties>
+	<properties> 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.compiler.source>1.8</maven.compiler.source>
 		<maven.compiler.target>1.8</maven.compiler.target>
@@ -22,13 +22,14 @@
 		<commons-csv.version>1.10.0</commons-csv.version>
 		<opencsv.version>5.8</opencsv.version>
 		<cucumber-reporting.version>5.7.6</cucumber-reporting.version>
-		<maven-cucumber-reporting.version>5.7.6</maven-cucumber-reporting.version>
 		<extentreports-cucumber7-adapter.version>1.14.0</extentreports-cucumber7-adapter.version>
 		<extentreports.version>5.1.0</extentreports.version>
 		<cucumber-picocontainer.version>7.13.0</cucumber-picocontainer.version>
 		<maven-compiler-plugin.version>3.11.0</maven-compiler-plugin.version>
 		<maven-surefire-plugin.version>3.1.2</maven-surefire-plugin.version>
+		<maven-cucumber-reporting.version>5.7.6</maven-cucumber-reporting.version>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>io.cucumber</groupId>
@@ -112,7 +113,6 @@
 			<version>${extentreports-cucumber7-adapter.version}</version>
 			<scope>test</scope>
 		</dependency>
-		<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
@@ -150,7 +150,7 @@
 							<properties>
 								<property>
 									<name>dataproviderthreadcount</name>
-									<value>5</value>
+									<value>2</value>
 								</property>
 							</properties>
 							<includes>
@@ -193,10 +193,11 @@
 							<goal>generate</goal>
 						</goals>
 						<configuration>
-							<projectName>selenium-framework</projectName>
-							<outputDirectory>${project.build.directory}/cucumber-jvm-reports
-							</outputDirectory>
-							<inputDirectory>${project.build.directory}/cucumber</inputDirectory>
+							<projectName>bp-cucumber</projectName>
+							<outputDirectory>${project.build.directory}/cucumber-jvm-reports</outputDirectory>
+							<inputDirectory>${project.build.directory}/site</inputDirectory>
+							<checkBuildResult>false</checkBuildResult>
+							<buildNumber>1</buildNumber>
 							<jsonFiles>
 								<param>**/*.json</param>
 							</jsonFiles>
