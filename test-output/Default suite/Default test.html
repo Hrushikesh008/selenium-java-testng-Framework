@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Default test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>4/5/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/0/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Sep 15 13:52:04 IST 2023</td>
+<td>Started on:</td><td>Thu Sep 21 12:40:35 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>122 seconds (122300 ms)</td>
+<tr><td>Total time:</td><td>157 seconds (157118 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,482 +67,6 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
-<table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
-<tr>
-<td title='tests.FrameworkTestRunner.runScenario()'><b>runScenario</b><br>Test class: tests.FrameworkTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify selenium easy input form submit page features cucumber data table", "Verify selenium easy InputFormSubmitPage features"</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: MicrosoftEdge=116.0.1938.81)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f54b848688db64027536eae53b6f4e4d, getTitle {}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52796}, msedge: {msedgedriverVersion: 116.0.1938.54 (e584466f74bf..., userDataDir: C:\Users\2457221\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52796/devtoo..., se:cdpVersion: 116.0.1938.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f54b848688db64027536eae53b6f4e4d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:305)
-	at actions.ActionPage.GetTitle(ActionPage.java:49)
-	at pages.InputFormSubmit.getTitle(InputFormSubmit.java:46)
-	at steps.SeleniumEasyInputFormSubmitSteps.user_verifys_input_form_submit_page_title(SeleniumEasyInputFormSubmitSteps.java:22)
-	at ?.user verifys input form submit page title(file:///C:/Users/2457221/eclipse-workspace/Framework-selenium-java-testng2/src/test/resources/Features/SeleniumEasyInputFormSubmit.feature:7)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1244229401", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1244229401'><pre>org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: MicrosoftEdge=116.0.1938.81)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [f54b848688db64027536eae53b6f4e4d, getTitle {}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52796}, msedge: {msedgedriverVersion: 116.0.1938.54 (e584466f74bf..., userDataDir: C:\Users\2457221\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52796/devtoo..., se:cdpVersion: 116.0.1938.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: f54b848688db64027536eae53b6f4e4d
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:305)
-	at actions.ActionPage.GetTitle(ActionPage.java:49)
-	at pages.InputFormSubmit.getTitle(InputFormSubmit.java:46)
-	at steps.SeleniumEasyInputFormSubmitSteps.user_verifys_input_form_submit_page_title(SeleniumEasyInputFormSubmitSteps.java:22)
-	at ?.user verifys input form submit page title(file:///C:/Users/2457221/eclipse-workspace/Framework-selenium-java-testng2/src/test/resources/Features/SeleniumEasyInputFormSubmit.feature:7)
-</pre></div></td>
-<td>106</td>
-<td>tests.FrameworkTestRunner@645aa696</td></tr>
-<tr>
-<td title='tests.FrameworkTestRunner.runScenario()'><b>runScenario</b><br>Test class: tests.FrameworkTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify two input fild in selenium easy simple form demo page features", "Verify selenium easy simple form demo page features"</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: MicrosoftEdge=116.0.1938.81)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [af5f08fe7ed14f88e73cf1b4a50cd77a, getTitle {}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52821}, msedge: {msedgedriverVersion: 116.0.1938.54 (e584466f74bf..., userDataDir: C:\Users\2457221\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52821/devtoo..., se:cdpVersion: 116.0.1938.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: af5f08fe7ed14f88e73cf1b4a50cd77a
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:305)
-	at actions.ActionPage.GetTitle(ActionPage.java:49)
-	at pages.SimpleFormDemo.getTitle(SimpleFormDemo.java:31)
-	at steps.SeleniumEasySimpleFormDemoSteps.user_verifys_simple_form_demo_page_title(SeleniumEasySimpleFormDemoSteps.java:23)
-	at ?.user verifys simple form demo page title(file:///C:/Users/2457221/eclipse-workspace/Framework-selenium-java-testng2/src/test/resources/Features/SeleniumEasySimpleFormDemoPage.feature:7)
-</pre></div><a href='#' onClick='toggleBox("stack-trace2009490740", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2009490740'><pre>org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: MicrosoftEdge=116.0.1938.81)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [af5f08fe7ed14f88e73cf1b4a50cd77a, getTitle {}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52821}, msedge: {msedgedriverVersion: 116.0.1938.54 (e584466f74bf..., userDataDir: C:\Users\2457221\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52821/devtoo..., se:cdpVersion: 116.0.1938.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: af5f08fe7ed14f88e73cf1b4a50cd77a
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:305)
-	at actions.ActionPage.GetTitle(ActionPage.java:49)
-	at pages.SimpleFormDemo.getTitle(SimpleFormDemo.java:31)
-	at steps.SeleniumEasySimpleFormDemoSteps.user_verifys_simple_form_demo_page_title(SeleniumEasySimpleFormDemoSteps.java:23)
-	at ?.user verifys simple form demo page title(file:///C:/Users/2457221/eclipse-workspace/Framework-selenium-java-testng2/src/test/resources/Features/SeleniumEasySimpleFormDemoPage.feature:7)
-</pre></div></td>
-<td>106</td>
-<td>tests.FrameworkTestRunner@645aa696</td></tr>
-<tr>
-<td title='tests.FrameworkTestRunner.runScenario()'><b>runScenario</b><br>Test class: tests.FrameworkTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify selenium easy range slider page features", "Verify selenium easy range slider page features"</td>
-<td><div><pre>java.lang.AssertionError: Drive quit giving Exception
-	at utils.HooksUtils.after(HooksUtils.java:27)
-Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [e6cb7dab8c58aeec0624709f463b4b9e, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52811}, msedge: {msedgedriverVersion: 116.0.1938.54 (e584466f74bf..., userDataDir: C:\Users\2457221\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52811/devtoo..., se:cdpVersion: 116.0.1938.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e6cb7dab8c58aeec0624709f463b4b9e
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:161)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:433)
-	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:351)
-	at utils.HooksUtils.after(HooksUtils.java:25)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
-	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
-	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:90)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: driver.version: unknown
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:157)
-	... 42 more
-Caused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:183)
-	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:117)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:148)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
-	... 3 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace561703993", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace561703993'><pre>java.lang.AssertionError: Drive quit giving Exception
-	at utils.HooksUtils.after(HooksUtils.java:27)
-Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [e6cb7dab8c58aeec0624709f463b4b9e, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52811}, msedge: {msedgedriverVersion: 116.0.1938.54 (e584466f74bf..., userDataDir: C:\Users\2457221\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52811/devtoo..., se:cdpVersion: 116.0.1938.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: e6cb7dab8c58aeec0624709f463b4b9e
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:161)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:433)
-	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:351)
-	at utils.HooksUtils.after(HooksUtils.java:25)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
-	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
-	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:90)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: driver.version: unknown
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:157)
-	... 42 more
-Caused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:183)
-	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:117)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:148)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
-	... 3 more
-</pre></div></td>
-<td>84</td>
-<td>tests.FrameworkTestRunner@645aa696</td></tr>
-<tr>
-<td title='tests.FrameworkTestRunner.runScenario()'><b>runScenario</b><br>Test class: tests.FrameworkTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify single input fild in selenium easy simple form demo page features", "Verify selenium easy simple form demo page features"</td>
-<td><div><pre>java.lang.AssertionError: Drive quit giving Exception
-	at utils.HooksUtils.after(HooksUtils.java:27)
-Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [4452f3c72620e4b578a1f1e16debab69, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52790}, msedge: {msedgedriverVersion: 116.0.1938.54 (e584466f74bf..., userDataDir: C:\Users\2457221\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52790/devtoo..., se:cdpVersion: 116.0.1938.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4452f3c72620e4b578a1f1e16debab69
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:161)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:433)
-	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:351)
-	at utils.HooksUtils.after(HooksUtils.java:25)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
-	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
-	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:90)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: driver.version: unknown
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:157)
-	... 42 more
-Caused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:183)
-	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:117)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:148)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
-	... 3 more
-</pre></div><a href='#' onClick='toggleBox("stack-trace1923199470", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1923199470'><pre>java.lang.AssertionError: Drive quit giving Exception
-	at utils.HooksUtils.after(HooksUtils.java:27)
-Caused by: org.openqa.selenium.WebDriverException: Timed out waiting for driver server to stop.
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [4452f3c72620e4b578a1f1e16debab69, quit {}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52790}, msedge: {msedgedriverVersion: 116.0.1938.54 (e584466f74bf..., userDataDir: C:\Users\2457221\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52790/devtoo..., se:cdpVersion: 116.0.1938.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 4452f3c72620e4b578a1f1e16debab69
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:161)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.quit(RemoteWebDriver.java:433)
-	at org.openqa.selenium.chromium.ChromiumDriver.quit(ChromiumDriver.java:351)
-	at utils.HooksUtils.after(HooksUtils.java:25)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at io.cucumber.java.Invoker.doInvoke(Invoker.java:66)
-	at io.cucumber.java.Invoker.invoke(Invoker.java:24)
-	at io.cucumber.java.AbstractGlueDefinition.invokeMethod(AbstractGlueDefinition.java:47)
-	at io.cucumber.java.JavaHookDefinition.execute(JavaHookDefinition.java:64)
-	at io.cucumber.core.runner.CoreHookDefinition.execute(CoreHookDefinition.java:46)
-	at io.cucumber.core.runner.HookDefinitionMatch.runStep(HookDefinitionMatch.java:21)
-	at io.cucumber.core.runner.ExecutionMode$1.execute(ExecutionMode.java:10)
-	at io.cucumber.core.runner.TestStep.executeStep(TestStep.java:84)
-	at io.cucumber.core.runner.TestStep.run(TestStep.java:56)
-	at io.cucumber.core.runner.TestCase.run(TestCase.java:90)
-	at io.cucumber.core.runner.Runner.runPickle(Runner.java:75)
-	at io.cucumber.testng.TestNGCucumberRunner.lambda$runScenario$1(TestNGCucumberRunner.java:132)
-	at io.cucumber.core.runtime.CucumberExecutionContext.lambda$runTestCase$5(CucumberExecutionContext.java:137)
-	at io.cucumber.core.runtime.RethrowingThrowableCollector.executeAndThrow(RethrowingThrowableCollector.java:23)
-	at io.cucumber.core.runtime.CucumberExecutionContext.runTestCase(CucumberExecutionContext.java:137)
-	at io.cucumber.testng.TestNGCucumberRunner.runScenario(TestNGCucumberRunner.java:129)
-	at io.cucumber.testng.AbstractTestNGCucumberTests.runScenario(AbstractTestNGCucumberTests.java:35)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-	at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-	at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:77)
-	at org.testng.internal.TestMethodWithDataProviderMethodWorker.call(TestMethodWithDataProviderMethodWorker.java:15)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:834)
-Caused by: java.util.concurrent.ExecutionException: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: driver.version: unknown
-	at java.base/java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:395)
-	at java.base/java.util.concurrent.CompletableFuture.get(CompletableFuture.java:2022)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:157)
-	... 42 more
-Caused by: org.openqa.selenium.TimeoutException: Process timed out after waiting for 20000 ms.
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: driver.version: unknown
-	at org.openqa.selenium.os.OsProcess.waitFor(OsProcess.java:183)
-	at org.openqa.selenium.os.CommandLine.waitFor(CommandLine.java:117)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.lambda$execute$2(DriverCommandExecutor.java:148)
-	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1700)
-	... 3 more
-</pre></div></td>
-<td>84</td>
-<td>tests.FrameworkTestRunner@645aa696</td></tr>
-<tr>
-<td title='tests.FrameworkTestRunner.runScenario()'><b>runScenario</b><br>Test class: tests.FrameworkTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify two input fild in selenium easy simple form demo page features", "Verify selenium easy simple form demo page features"</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: MicrosoftEdge=116.0.1938.81)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [55a104c690ecc98c8ecc4cb8a8a6d554, getTitle {}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52818}, msedge: {msedgedriverVersion: 116.0.1938.54 (e584466f74bf..., userDataDir: C:\Users\2457221\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52818/devtoo..., se:cdpVersion: 116.0.1938.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 55a104c690ecc98c8ecc4cb8a8a6d554
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:305)
-	at actions.ActionPage.GetTitle(ActionPage.java:49)
-	at pages.HomePage.getTitle(HomePage.java:16)
-	at steps.SeleniumEasyHomePageSteps.user_is_on_selenium_easy_home_page_verifying_page_title(SeleniumEasyHomePageSteps.java:21)
-	at ?.user is on selenium easy homePage verifying page title(file:///C:/Users/2457221/eclipse-workspace/Framework-selenium-java-testng2/src/test/resources/Features/SeleniumEasySimpleFormDemoPage.feature:5)
-</pre></div><a href='#' onClick='toggleBox("stack-trace526419983", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace526419983'><pre>org.openqa.selenium.WebDriverException: disconnected: not connected to DevTools
-  (failed to check if window was closed: disconnected: not connected to DevTools)
-  (Session info: MicrosoftEdge=116.0.1938.81)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
-Driver info: org.openqa.selenium.edge.EdgeDriver
-Command: [55a104c690ecc98c8ecc4cb8a8a6d554, getTitle {}]
-Capabilities {acceptInsecureCerts: false, browserName: msedge, browserVersion: 116.0.1938.81, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52818}, msedge: {msedgedriverVersion: 116.0.1938.54 (e584466f74bf..., userDataDir: C:\Users\2457221\AppData\Lo...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52818/devtoo..., se:cdpVersion: 116.0.1938.81, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 55a104c690ecc98c8ecc4cb8a8a6d554
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
-	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:52)
-	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:191)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:196)
-	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:171)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:591)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:595)
-	at org.openqa.selenium.remote.RemoteWebDriver.getTitle(RemoteWebDriver.java:305)
-	at actions.ActionPage.GetTitle(ActionPage.java:49)
-	at pages.HomePage.getTitle(HomePage.java:16)
-	at steps.SeleniumEasyHomePageSteps.user_is_on_selenium_easy_home_page_verifying_page_title(SeleniumEasyHomePageSteps.java:21)
-	at ?.user is on selenium easy homePage verifying page title(file:///C:/Users/2457221/eclipse-workspace/Framework-selenium-java-testng2/src/test/resources/Features/SeleniumEasySimpleFormDemoPage.feature:5)
-</pre></div></td>
-<td>106</td>
-<td>tests.FrameworkTestRunner@645aa696</td></tr>
-</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -551,24 +75,49 @@ Session ID: 55a104c690ecc98c8ecc4cb8a8a6d554
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='tests.FrameworkTestRunner.runScenario()'><b>runScenario</b><br>Test class: tests.FrameworkTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify selenium easy input form submitPage features property file", "Verify selenium easy InputFormSubmitPage features"</td>
-<td></td>
-<td>107</td>
-<td>tests.FrameworkTestRunner@645aa696</td></tr>
-<tr>
-<td title='tests.FrameworkTestRunner.runScenario()'><b>runScenario</b><br>Test class: tests.FrameworkTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify selenium easy input form submit page features CSV file", "Verify selenium easy InputFormSubmitPage features"</td>
-<td></td>
-<td>105</td>
-<td>tests.FrameworkTestRunner@645aa696</td></tr>
-<tr>
 <td title='tests.FrameworkTestRunner.runScenario()'><b>runScenario</b><br>Test class: tests.FrameworkTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify selenium easy radio buttons page features", "Verify selenium easy radio buttons page features"</td>
 <td></td>
-<td>109</td>
+<td>71</td>
+<td>tests.FrameworkTestRunner@645aa696</td></tr>
+<tr>
+<td title='tests.FrameworkTestRunner.runScenario()'><b>runScenario</b><br>Test class: tests.FrameworkTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify single input fild in selenium easy simple form demo page features", "Verify selenium easy simple form demo page features"</td>
+<td></td>
+<td>71</td>
+<td>tests.FrameworkTestRunner@645aa696</td></tr>
+<tr>
+<td title='tests.FrameworkTestRunner.runScenario()'><b>runScenario</b><br>Test class: tests.FrameworkTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify selenium easy input form submitPage features property file", "Verify selenium easy InputFormSubmitPage features"</td>
+<td></td>
+<td>82</td>
 <td>tests.FrameworkTestRunner@645aa696</td></tr>
 <tr>
 <td title='tests.FrameworkTestRunner.runScenario()'><b>runScenario</b><br>Test class: tests.FrameworkTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify error message in selenium easy input form submit page features cucumber data table", "Verify selenium easy InputFormSubmitPage features"</td>
 <td></td>
-<td>104</td>
+<td>75</td>
+<td>tests.FrameworkTestRunner@645aa696</td></tr>
+<tr>
+<td title='tests.FrameworkTestRunner.runScenario()'><b>runScenario</b><br>Test class: tests.FrameworkTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify selenium easy input form submit page features cucumber data table", "Verify selenium easy InputFormSubmitPage features"</td>
+<td></td>
+<td>152</td>
+<td>tests.FrameworkTestRunner@645aa696</td></tr>
+<tr>
+<td title='tests.FrameworkTestRunner.runScenario()'><b>runScenario</b><br>Test class: tests.FrameworkTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify two input fild in selenium easy simple form demo page features", "Verify selenium easy simple form demo page features"</td>
+<td></td>
+<td>83</td>
+<td>tests.FrameworkTestRunner@645aa696</td></tr>
+<tr>
+<td title='tests.FrameworkTestRunner.runScenario()'><b>runScenario</b><br>Test class: tests.FrameworkTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify two input fild in selenium easy simple form demo page features", "Verify selenium easy simple form demo page features"</td>
+<td></td>
+<td>74</td>
+<td>tests.FrameworkTestRunner@645aa696</td></tr>
+<tr>
+<td title='tests.FrameworkTestRunner.runScenario()'><b>runScenario</b><br>Test class: tests.FrameworkTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify selenium easy range slider page features", "Verify selenium easy range slider page features"</td>
+<td></td>
+<td>74</td>
+<td>tests.FrameworkTestRunner@645aa696</td></tr>
+<tr>
+<td title='tests.FrameworkTestRunner.runScenario()'><b>runScenario</b><br>Test class: tests.FrameworkTestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Verify selenium easy input form submit page features CSV file", "Verify selenium easy InputFormSubmitPage features"</td>
+<td></td>
+<td>81</td>
 <td>tests.FrameworkTestRunner@645aa696</td></tr>
 </table><p>
 </body>

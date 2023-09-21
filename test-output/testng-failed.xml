@@ -6,7 +6,7 @@
       <class name="tests.FrameworkTestRunner">
         <methods>
           <include name="setUpClass"/>
-          <include name="runScenario" invocation-numbers="6 5 7 2 8"/>
+          <include name="runScenario" invocation-numbers="5"/>
           <include name="tearDownClass"/>
         </methods>
       </class> <!-- tests.FrameworkTestRunner -->

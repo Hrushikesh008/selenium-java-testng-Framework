@@ -1,0 +1,1557 @@
+[
+	{
+		"line": 1,
+		"elements": [
+			{
+				"line": 3,
+				"name": "User navigates and verifys title",
+				"description": "",
+				"type": "background",
+				"keyword": "Background",
+				"steps": [
+					{
+						"result": {
+							"duration": 20119407100,
+							"status": "passed"
+						},
+						"line": 4,
+						"name": "I navigate to the \"http://demo.seleniumeasy.com/\" page",
+						"match": {
+							"arguments": [
+								{
+									"val": "\"http://demo.seleniumeasy.com/\"",
+									"offset": 18
+								}
+							],
+							"location": "steps.NavigationSteps.iNavigateToThePage(java.lang.String)"
+						},
+						"keyword": "Given "
+					},
+					{
+						"result": {
+							"duration": 838583800,
+							"status": "passed"
+						},
+						"line": 5,
+						"name": "user is on selenium easy homePage verifying page title",
+						"match": {
+							"location": "steps.SeleniumEasyHomePageSteps.user_is_on_selenium_easy_home_page_verifying_page_title()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 11880211400,
+							"status": "passed"
+						},
+						"line": 6,
+						"name": "user navigate to input form submit page",
+						"match": {
+							"location": "steps.SeleniumEasyHomePageSteps.user_navigate_to_input_form_submit_page()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 29004500,
+							"status": "passed"
+						},
+						"line": 7,
+						"name": "user verifys input form submit page title",
+						"match": {
+							"location": "steps.SeleniumEasyInputFormSubmitSteps.user_verifys_input_form_submit_page_title()"
+						},
+						"keyword": "And "
+					}
+				]
+			},
+			{
+				"start_timestamp": "2023-09-21T07:10:40.722Z",
+				"before": [
+					{
+						"result": {
+							"duration": 28392998600,
+							"status": "passed"
+						},
+						"match": {
+							"location": "utils.HooksUtils.before()"
+						}
+					}
+				],
+				"line": 10,
+				"name": "Verify selenium easy input form submitPage features property file",
+				"description": "",
+				"id": "verify-selenium-easy-inputformsubmitpage-features;verify-selenium-easy-input-form-submitpage-features-property-file",
+				"after": [
+					{
+						"result": {
+							"duration": 2457489700,
+							"status": "passed"
+						},
+						"match": {
+							"location": "utils.HooksUtils.after()"
+						}
+					}
+				],
+				"type": "scenario",
+				"keyword": "Scenario",
+				"steps": [
+					{
+						"result": {
+							"duration": 7872227300,
+							"status": "passed"
+						},
+						"line": 11,
+						"name": "user fills input text box from property file",
+						"match": {
+							"location": "steps.SeleniumEasyInputFormSubmitSteps.user_fills_input_text_box_from_property_file(io.cucumber.datatable.DataTable)"
+						},
+						"rows": [
+							{
+								"cells": [
+									"fieldName",
+									"inputValue"
+								]
+							},
+							{
+								"cells": [
+									"First Name",
+									"FirstName"
+								]
+							},
+							{
+								"cells": [
+									"Last Name",
+									"LastName"
+								]
+							},
+							{
+								"cells": [
+									"E-Mail",
+									"EMail"
+								]
+							},
+							{
+								"cells": [
+									"Phone #",
+									"Phone"
+								]
+							},
+							{
+								"cells": [
+									"Address",
+									"Address"
+								]
+							},
+							{
+								"cells": [
+									"City",
+									"City"
+								]
+							},
+							{
+								"cells": [
+									"Zip Code",
+									"ZipCode"
+								]
+							}
+						],
+						"keyword": "When "
+					},
+					{
+						"result": {
+							"duration": 89674800,
+							"status": "passed"
+						},
+						"line": 20,
+						"name": "user clicks send button",
+						"match": {
+							"location": "steps.SeleniumEasyInputFormSubmitSteps.user_clicks_send_button()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 10018532800,
+							"status": "passed"
+						},
+						"line": 21,
+						"name": "user verifys if input box are filled",
+						"match": {
+							"location": "steps.SeleniumEasyInputFormSubmitSteps.user_verifys_if_input_box_are_filled()"
+						},
+						"keyword": "Then "
+					}
+				],
+				"tags": [
+					{
+						"name": "@Test"
+					}
+				]
+			},
+			{
+				"line": 3,
+				"name": "User navigates and verifys title",
+				"description": "",
+				"type": "background",
+				"keyword": "Background",
+				"steps": [
+					{
+						"result": {
+							"duration": 12627587700,
+							"status": "passed"
+						},
+						"line": 4,
+						"name": "I navigate to the \"http://demo.seleniumeasy.com/\" page",
+						"match": {
+							"arguments": [
+								{
+									"val": "\"http://demo.seleniumeasy.com/\"",
+									"offset": 18
+								}
+							],
+							"location": "steps.NavigationSteps.iNavigateToThePage(java.lang.String)"
+						},
+						"keyword": "Given "
+					},
+					{
+						"result": {
+							"duration": 18001000,
+							"status": "passed"
+						},
+						"line": 5,
+						"name": "user is on selenium easy homePage verifying page title",
+						"match": {
+							"location": "steps.SeleniumEasyHomePageSteps.user_is_on_selenium_easy_home_page_verifying_page_title()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 4564812500,
+							"status": "passed"
+						},
+						"line": 6,
+						"name": "user navigate to input form submit page",
+						"match": {
+							"location": "steps.SeleniumEasyHomePageSteps.user_navigate_to_input_form_submit_page()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 93008800,
+							"status": "passed"
+						},
+						"line": 7,
+						"name": "user verifys input form submit page title",
+						"match": {
+							"location": "steps.SeleniumEasyInputFormSubmitSteps.user_verifys_input_form_submit_page_title()"
+						},
+						"keyword": "And "
+					}
+				]
+			},
+			{
+				"start_timestamp": "2023-09-21T07:10:40.722Z",
+				"before": [
+					{
+						"result": {
+							"duration": 28391999100,
+							"status": "passed"
+						},
+						"match": {
+							"location": "utils.HooksUtils.before()"
+						}
+					}
+				],
+				"line": 24,
+				"name": "Verify selenium easy input form submit page features CSV file",
+				"description": "",
+				"id": "verify-selenium-easy-inputformsubmitpage-features;verify-selenium-easy-input-form-submit-page-features-csv-file",
+				"after": [
+					{
+						"result": {
+							"duration": 2743902100,
+							"status": "passed"
+						},
+						"match": {
+							"location": "utils.HooksUtils.after()"
+						}
+					}
+				],
+				"type": "scenario",
+				"keyword": "Scenario",
+				"steps": [
+					{
+						"result": {
+							"duration": 21757738500,
+							"status": "passed"
+						},
+						"line": 25,
+						"name": "user fills input text box from CSV files",
+						"match": {
+							"location": "steps.SeleniumEasyInputFormSubmitSteps.user_fills_input_text_box_from_csv_files(io.cucumber.datatable.DataTable)"
+						},
+						"rows": [
+							{
+								"cells": [
+									"fieldName",
+									"inputValueCSV"
+								]
+							},
+							{
+								"cells": [
+									"First Name",
+									"FirstName"
+								]
+							},
+							{
+								"cells": [
+									"Last Name",
+									"LastName"
+								]
+							},
+							{
+								"cells": [
+									"E-Mail",
+									"EMail"
+								]
+							},
+							{
+								"cells": [
+									"Phone #",
+									"Phone"
+								]
+							},
+							{
+								"cells": [
+									"Address",
+									"Address"
+								]
+							},
+							{
+								"cells": [
+									"City",
+									"City"
+								]
+							},
+							{
+								"cells": [
+									"Zip Code",
+									"ZipCode"
+								]
+							}
+						],
+						"keyword": "When "
+					},
+					{
+						"result": {
+							"duration": 133853000,
+							"status": "passed"
+						},
+						"line": 34,
+						"name": "user clicks send button",
+						"match": {
+							"location": "steps.SeleniumEasyInputFormSubmitSteps.user_clicks_send_button()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 10078943700,
+							"status": "passed"
+						},
+						"line": 35,
+						"name": "user verifys if input box are filled",
+						"match": {
+							"location": "steps.SeleniumEasyInputFormSubmitSteps.user_verifys_if_input_box_are_filled()"
+						},
+						"keyword": "Then "
+					}
+				],
+				"tags": [
+					{
+						"name": "@Test"
+					}
+				]
+			},
+			{
+				"line": 3,
+				"name": "User navigates and verifys title",
+				"description": "",
+				"type": "background",
+				"keyword": "Background",
+				"steps": [
+					{
+						"result": {
+							"duration": 108542204800,
+							"status": "passed"
+						},
+						"line": 4,
+						"name": "I navigate to the \"http://demo.seleniumeasy.com/\" page",
+						"match": {
+							"arguments": [
+								{
+									"val": "\"http://demo.seleniumeasy.com/\"",
+									"offset": 18
+								}
+							],
+							"location": "steps.NavigationSteps.iNavigateToThePage(java.lang.String)"
+						},
+						"keyword": "Given "
+					},
+					{
+						"result": {
+							"duration": 2031900,
+							"status": "passed"
+						},
+						"line": 5,
+						"name": "user is on selenium easy homePage verifying page title",
+						"match": {
+							"location": "steps.SeleniumEasyHomePageSteps.user_is_on_selenium_easy_home_page_verifying_page_title()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 789987500,
+							"status": "passed"
+						},
+						"line": 6,
+						"name": "user navigate to input form submit page",
+						"match": {
+							"location": "steps.SeleniumEasyHomePageSteps.user_navigate_to_input_form_submit_page()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 15622900,
+							"status": "passed"
+						},
+						"line": 7,
+						"name": "user verifys input form submit page title",
+						"match": {
+							"location": "steps.SeleniumEasyInputFormSubmitSteps.user_verifys_input_form_submit_page_title()"
+						},
+						"keyword": "And "
+					}
+				]
+			},
+			{
+				"start_timestamp": "2023-09-21T07:10:40.722Z",
+				"before": [
+					{
+						"result": {
+							"duration": 28386998600,
+							"status": "passed"
+						},
+						"match": {
+							"location": "utils.HooksUtils.before()"
+						}
+					}
+				],
+				"line": 38,
+				"name": "Verify selenium easy input form submit page features cucumber data table",
+				"description": "",
+				"id": "verify-selenium-easy-inputformsubmitpage-features;verify-selenium-easy-input-form-submit-page-features-cucumber-data-table",
+				"after": [
+					{
+						"result": {
+							"duration": 897669300,
+							"status": "passed"
+						},
+						"match": {
+							"location": "utils.HooksUtils.after()"
+						}
+					}
+				],
+				"type": "scenario",
+				"keyword": "Scenario",
+				"steps": [
+					{
+						"result": {
+							"duration": 2469232300,
+							"status": "passed"
+						},
+						"line": 39,
+						"name": "user fills input in text box",
+						"match": {
+							"location": "steps.SeleniumEasyInputFormSubmitSteps.user_fills_input(io.cucumber.datatable.DataTable)"
+						},
+						"rows": [
+							{
+								"cells": [
+									"fieldName",
+									"inputValue"
+								]
+							},
+							{
+								"cells": [
+									"First Name",
+									"Muhammad"
+								]
+							},
+							{
+								"cells": [
+									"Last Name",
+									"Ali"
+								]
+							},
+							{
+								"cells": [
+									"E-Mail",
+									"Muhammad@abc.com"
+								]
+							},
+							{
+								"cells": [
+									"Phone #",
+									"0987654321"
+								]
+							},
+							{
+								"cells": [
+									"Address",
+									"Street24"
+								]
+							},
+							{
+								"cells": [
+									"City",
+									"G-City"
+								]
+							},
+							{
+								"cells": [
+									"Zip Code",
+									"00000"
+								]
+							}
+						],
+						"keyword": "When "
+					},
+					{
+						"result": {
+							"duration": 81191700,
+							"status": "passed"
+						},
+						"line": 48,
+						"name": "user clicks send button",
+						"match": {
+							"location": "steps.SeleniumEasyInputFormSubmitSteps.user_clicks_send_button()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 10011221100,
+							"status": "passed"
+						},
+						"line": 49,
+						"name": "user verifys if input box are filled",
+						"match": {
+							"location": "steps.SeleniumEasyInputFormSubmitSteps.user_verifys_if_input_box_are_filled()"
+						},
+						"keyword": "Then "
+					}
+				],
+				"tags": [
+					{
+						"name": "@Test"
+					}
+				]
+			},
+			{
+				"line": 3,
+				"name": "User navigates and verifys title",
+				"description": "",
+				"type": "background",
+				"keyword": "Background",
+				"steps": [
+					{
+						"result": {
+							"duration": 17645045500,
+							"status": "passed"
+						},
+						"line": 4,
+						"name": "I navigate to the \"http://demo.seleniumeasy.com/\" page",
+						"match": {
+							"arguments": [
+								{
+									"val": "\"http://demo.seleniumeasy.com/\"",
+									"offset": 18
+								}
+							],
+							"location": "steps.NavigationSteps.iNavigateToThePage(java.lang.String)"
+						},
+						"keyword": "Given "
+					},
+					{
+						"result": {
+							"duration": 17997200,
+							"status": "passed"
+						},
+						"line": 5,
+						"name": "user is on selenium easy homePage verifying page title",
+						"match": {
+							"location": "steps.SeleniumEasyHomePageSteps.user_is_on_selenium_easy_home_page_verifying_page_title()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 13758622500,
+							"status": "passed"
+						},
+						"line": 6,
+						"name": "user navigate to input form submit page",
+						"match": {
+							"location": "steps.SeleniumEasyHomePageSteps.user_navigate_to_input_form_submit_page()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 22741700,
+							"status": "passed"
+						},
+						"line": 7,
+						"name": "user verifys input form submit page title",
+						"match": {
+							"location": "steps.SeleniumEasyInputFormSubmitSteps.user_verifys_input_form_submit_page_title()"
+						},
+						"keyword": "And "
+					}
+				]
+			},
+			{
+				"start_timestamp": "2023-09-21T07:10:40.722Z",
+				"before": [
+					{
+						"result": {
+							"duration": 28398001700,
+							"status": "passed"
+						},
+						"match": {
+							"location": "utils.HooksUtils.before()"
+						}
+					}
+				],
+				"line": 52,
+				"name": "Verify error message in selenium easy input form submit page features cucumber data table",
+				"description": "",
+				"id": "verify-selenium-easy-inputformsubmitpage-features;verify-error-message-in-selenium-easy-input-form-submit-page-features-cucumber-data-table",
+				"after": [
+					{
+						"result": {
+							"duration": 6015715500,
+							"status": "passed"
+						},
+						"match": {
+							"location": "utils.HooksUtils.after()"
+						}
+					}
+				],
+				"type": "scenario",
+				"keyword": "Scenario Outline",
+				"steps": [
+					{
+						"result": {
+							"duration": 7750876400,
+							"status": "passed"
+						},
+						"line": 53,
+						"name": "user fills input in text box",
+						"match": {
+							"location": "steps.SeleniumEasyInputFormSubmitSteps.user_fills_input(io.cucumber.datatable.DataTable)"
+						},
+						"rows": [
+							{
+								"cells": [
+									"fieldName",
+									"inputValue"
+								]
+							},
+							{
+								"cells": [
+									"First Name",
+									"M"
+								]
+							},
+							{
+								"cells": [
+									"Phone #",
+									"0987654321"
+								]
+							},
+							{
+								"cells": [
+									"Address",
+									"Street24"
+								]
+							},
+							{
+								"cells": [
+									"City",
+									"G-City"
+								]
+							},
+							{
+								"cells": [
+									"Zip Code",
+									"00000"
+								]
+							}
+						],
+						"keyword": "When "
+					},
+					{
+						"result": {
+							"duration": 95915000,
+							"status": "passed"
+						},
+						"line": 60,
+						"name": "user clicks send button",
+						"match": {
+							"location": "steps.SeleniumEasyInputFormSubmitSteps.user_clicks_send_button()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 192265300,
+							"status": "passed"
+						},
+						"line": 61,
+						"name": "user verifys if error message is visible",
+						"match": {
+							"location": "steps.SeleniumEasyInputFormSubmitSteps.user_verifys_if_error_message_is_visible_for_firstname_and_email_input(io.cucumber.datatable.DataTable)"
+						},
+						"rows": [
+							{
+								"cells": [
+									"ErrorMessage"
+								]
+							},
+							{
+								"cells": [
+									"Please enter more than 2 characters"
+								]
+							},
+							{
+								"cells": [
+									"Please supply your last name"
+								]
+							},
+							{
+								"cells": [
+									"Please supply your email address"
+								]
+							}
+						],
+						"keyword": "Then "
+					}
+				],
+				"tags": [
+					{
+						"name": "@Test"
+					}
+				]
+			}
+		],
+		"name": "Verify selenium easy InputFormSubmitPage features",
+		"description": "",
+		"id": "verify-selenium-easy-inputformsubmitpage-features",
+		"keyword": "Feature",
+		"uri": "file:src/test/resources/Features/SeleniumEasyInputFormSubmit.feature",
+		"tags": []
+	},
+	{
+		"line": 1,
+		"elements": [
+			{
+				"line": 3,
+				"name": "User navigates and verifys title",
+				"description": "",
+				"type": "background",
+				"keyword": "Background",
+				"steps": [
+					{
+						"result": {
+							"duration": 17337398300,
+							"status": "passed"
+						},
+						"line": 4,
+						"name": "I navigate to the \"http://demo.seleniumeasy.com/\" page",
+						"match": {
+							"arguments": [
+								{
+									"val": "\"http://demo.seleniumeasy.com/\"",
+									"offset": 18
+								}
+							],
+							"location": "steps.NavigationSteps.iNavigateToThePage(java.lang.String)"
+						},
+						"keyword": "Given "
+					},
+					{
+						"result": {
+							"duration": 18000300,
+							"status": "passed"
+						},
+						"line": 5,
+						"name": "user is on selenium easy homePage verifying page title",
+						"match": {
+							"location": "steps.SeleniumEasyHomePageSteps.user_is_on_selenium_easy_home_page_verifying_page_title()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 9929946000,
+							"status": "passed"
+						},
+						"line": 6,
+						"name": "user navigate to radio buttons page",
+						"match": {
+							"location": "steps.SeleniumEasyHomePageSteps.user_navigate_to_radio_buttons_page()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 70665100,
+							"status": "passed"
+						},
+						"line": 7,
+						"name": "user verifys radio buttons page title",
+						"match": {
+							"location": "steps.SeleniumEasyInputRadioButtonsSteps.user_verifys_radio_buttons_page_title()"
+						},
+						"keyword": "And "
+					}
+				]
+			},
+			{
+				"start_timestamp": "2023-09-21T07:10:40.722Z",
+				"before": [
+					{
+						"result": {
+							"duration": 28391999100,
+							"status": "passed"
+						},
+						"match": {
+							"location": "utils.HooksUtils.before()"
+						}
+					}
+				],
+				"line": 17,
+				"name": "Verify selenium easy radio buttons page features",
+				"description": "",
+				"id": "verify-selenium-easy-radio-buttons-page-features;verify-selenium-easy-radio-buttons-page-features;;2",
+				"after": [
+					{
+						"result": {
+							"duration": 9227287000,
+							"status": "passed"
+						},
+						"match": {
+							"location": "utils.HooksUtils.after()"
+						}
+					}
+				],
+				"type": "scenario",
+				"keyword": "Scenario Outline",
+				"steps": [
+					{
+						"result": {
+							"duration": 4595242100,
+							"status": "passed"
+						},
+						"line": 11,
+						"name": "user clicks \"0 - 5\" and \"Male\" in radio buttons page",
+						"match": {
+							"arguments": [
+								{
+									"val": "\"0 - 5\"",
+									"offset": 12
+								},
+								{
+									"val": "\"Male\"",
+									"offset": 24
+								}
+							],
+							"location": "steps.SeleniumEasyInputRadioButtonsSteps.user_clicks_ageGroup_and_sex_in_radio_buttons_page(java.lang.String,java.lang.String)"
+						},
+						"keyword": "When "
+					},
+					{
+						"result": {
+							"duration": 452916200,
+							"status": "passed"
+						},
+						"line": 12,
+						"name": "user clicks on get value button",
+						"match": {
+							"location": "steps.SeleniumEasyInputRadioButtonsSteps.user_clicks_on_get_value_button()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 239651200,
+							"status": "passed"
+						},
+						"line": 13,
+						"name": "user verifys \"Sex : Male\" and \"Age group: 0 - 5\"",
+						"match": {
+							"arguments": [
+								{
+									"val": "\"Sex : Male\"",
+									"offset": 13
+								},
+								{
+									"val": "\"Age group: 0 - 5\"",
+									"offset": 30
+								}
+							],
+							"location": "steps.SeleniumEasyInputRadioButtonsSteps.user_verifys_generated_value(java.lang.String,java.lang.String)"
+						},
+						"keyword": "Then "
+					}
+				],
+				"tags": [
+					{
+						"name": "@Test"
+					}
+				]
+			}
+		],
+		"name": "Verify selenium easy radio buttons page features",
+		"description": "",
+		"id": "verify-selenium-easy-radio-buttons-page-features",
+		"keyword": "Feature",
+		"uri": "file:src/test/resources/Features/SeleniumEasyRadioButtons.feature",
+		"tags": []
+	},
+	{
+		"line": 1,
+		"elements": [
+			{
+				"line": 3,
+				"name": "User navigates and verifys title",
+				"description": "",
+				"type": "background",
+				"keyword": "Background",
+				"steps": [
+					{
+						"result": {
+							"duration": 23310353100,
+							"status": "passed"
+						},
+						"line": 4,
+						"name": "I navigate to the \"http://demo.seleniumeasy.com/\" page",
+						"match": {
+							"arguments": [
+								{
+									"val": "\"http://demo.seleniumeasy.com/\"",
+									"offset": 18
+								}
+							],
+							"location": "steps.NavigationSteps.iNavigateToThePage(java.lang.String)"
+						},
+						"keyword": "Given "
+					},
+					{
+						"result": {
+							"duration": 1627091900,
+							"status": "passed"
+						},
+						"line": 5,
+						"name": "user is on selenium easy homePage verifying page title",
+						"match": {
+							"location": "steps.SeleniumEasyHomePageSteps.user_is_on_selenium_easy_home_page_verifying_page_title()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 12725966900,
+							"status": "passed"
+						},
+						"line": 6,
+						"name": "user navigate to range slider page",
+						"match": {
+							"location": "steps.SeleniumEasyHomePageSteps.user_navigate_to_range_sliderPage()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 37585900,
+							"status": "passed"
+						},
+						"line": 7,
+						"name": "user verifys range slider page title",
+						"match": {
+							"location": "steps.SeleniumEasyRangeSliderSteps.user_verifys_range_slider_page_title()"
+						},
+						"keyword": "And "
+					}
+				]
+			},
+			{
+				"start_timestamp": "2023-09-21T07:10:40.737Z",
+				"before": [
+					{
+						"result": {
+							"duration": 28373367900,
+							"status": "passed"
+						},
+						"match": {
+							"location": "utils.HooksUtils.before()"
+						}
+					}
+				],
+				"line": 10,
+				"name": "Verify selenium easy range slider page features",
+				"description": "",
+				"id": "verify-selenium-easy-range-slider-page-features;verify-selenium-easy-range-slider-page-features",
+				"after": [
+					{
+						"result": {
+							"duration": 6075813100,
+							"status": "passed"
+						},
+						"match": {
+							"location": "utils.HooksUtils.after()"
+						}
+					}
+				],
+				"type": "scenario",
+				"keyword": "Scenario",
+				"steps": [
+					{
+						"result": {
+							"duration": 1054388400,
+							"status": "passed"
+						},
+						"line": 11,
+						"name": "user drages slider from position 0 to 50",
+						"match": {
+							"arguments": [
+								{
+									"val": "0",
+									"offset": 33
+								},
+								{
+									"val": "50",
+									"offset": 38
+								}
+							],
+							"location": "steps.SeleniumEasyRangeSliderSteps.user_drages_slider_from_position(java.lang.Integer,java.lang.Integer)"
+						},
+						"keyword": "When "
+					},
+					{
+						"result": {
+							"duration": 82079800,
+							"status": "passed"
+						},
+						"line": 12,
+						"name": "user verifys range slider position \"50\"",
+						"match": {
+							"arguments": [
+								{
+									"val": "\"50\"",
+									"offset": 35
+								}
+							],
+							"location": "steps.SeleniumEasyRangeSliderSteps.user_verifys_range_slider_position(java.lang.String)"
+						},
+						"keyword": "Then "
+					}
+				],
+				"tags": [
+					{
+						"name": "@Test"
+					}
+				]
+			}
+		],
+		"name": "Verify selenium easy range slider page features",
+		"description": "",
+		"id": "verify-selenium-easy-range-slider-page-features",
+		"keyword": "Feature",
+		"uri": "file:src/test/resources/Features/SeleniumEasyRangeSliderPage.feature",
+		"tags": []
+	},
+	{
+		"line": 1,
+		"elements": [
+			{
+				"line": 3,
+				"name": "User navigates and verifys title",
+				"description": "",
+				"type": "background",
+				"keyword": "Background",
+				"steps": [
+					{
+						"result": {
+							"duration": 18571104600,
+							"status": "passed"
+						},
+						"line": 4,
+						"name": "I navigate to the \"http://demo.seleniumeasy.com/\" page",
+						"match": {
+							"arguments": [
+								{
+									"val": "\"http://demo.seleniumeasy.com/\"",
+									"offset": 18
+								}
+							],
+							"location": "steps.NavigationSteps.iNavigateToThePage(java.lang.String)"
+						},
+						"keyword": "Given "
+					},
+					{
+						"result": {
+							"duration": 33006000,
+							"status": "passed"
+						},
+						"line": 5,
+						"name": "user is on selenium easy homePage verifying page title",
+						"match": {
+							"location": "steps.SeleniumEasyHomePageSteps.user_is_on_selenium_easy_home_page_verifying_page_title()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 9442481000,
+							"status": "passed"
+						},
+						"line": 6,
+						"name": "user navigate to Simple Form Demo page",
+						"match": {
+							"location": "steps.SeleniumEasyHomePageSteps.user_navigate_to_Simple_Form_Demo_page()"
+						},
+						"keyword": "When "
+					},
+					{
+						"result": {
+							"duration": 2219902500,
+							"status": "passed"
+						},
+						"line": 7,
+						"name": "user verifys simple form demo page title",
+						"match": {
+							"location": "steps.SeleniumEasySimpleFormDemoSteps.user_verifys_simple_form_demo_page_title()"
+						},
+						"keyword": "And "
+					}
+				]
+			},
+			{
+				"start_timestamp": "2023-09-21T07:10:40.722Z",
+				"before": [
+					{
+						"result": {
+							"duration": 28371366300,
+							"status": "passed"
+						},
+						"match": {
+							"location": "utils.HooksUtils.before()"
+						}
+					}
+				],
+				"line": 10,
+				"name": "Verify single input fild in selenium easy simple form demo page features",
+				"description": "",
+				"id": "verify-selenium-easy-simple-form-demo-page-features;verify-single-input-fild-in-selenium-easy-simple-form-demo-page-features",
+				"after": [
+					{
+						"result": {
+							"duration": 9922854400,
+							"status": "passed"
+						},
+						"match": {
+							"location": "utils.HooksUtils.after()"
+						}
+					}
+				],
+				"type": "scenario",
+				"keyword": "Scenario",
+				"steps": [
+					{
+						"result": {
+							"duration": 190763600,
+							"status": "passed"
+						},
+						"line": 11,
+						"name": "user enters \"TCS\" in single input field text box",
+						"match": {
+							"arguments": [
+								{
+									"val": "\"TCS\"",
+									"offset": 12
+								}
+							],
+							"location": "steps.SeleniumEasySimpleFormDemoSteps.user_enters_in_single_input_field_text_box(java.lang.String)"
+						},
+						"keyword": "Then "
+					},
+					{
+						"result": {
+							"duration": 552611500,
+							"status": "passed"
+						},
+						"line": 12,
+						"name": "user clicks on single input field show message button",
+						"match": {
+							"location": "steps.SeleniumEasySimpleFormDemoSteps.user_clicks_on_single_input_field_show_message_button()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 940385900,
+							"status": "passed"
+						},
+						"line": 13,
+						"name": "user verifys single input field sucess message is equal to \"TCS\"",
+						"match": {
+							"arguments": [
+								{
+									"val": "\"TCS\"",
+									"offset": 59
+								}
+							],
+							"location": "steps.SeleniumEasySimpleFormDemoSteps.user_verifys_single_input_field_sucess_message_is_equal_to(java.lang.String)"
+						},
+						"keyword": "And "
+					}
+				],
+				"tags": [
+					{
+						"name": "@Test"
+					}
+				]
+			},
+			{
+				"line": 3,
+				"name": "User navigates and verifys title",
+				"description": "",
+				"type": "background",
+				"keyword": "Background",
+				"steps": [
+					{
+						"result": {
+							"duration": 52136886400,
+							"status": "passed"
+						},
+						"line": 4,
+						"name": "I navigate to the \"http://demo.seleniumeasy.com/\" page",
+						"match": {
+							"arguments": [
+								{
+									"val": "\"http://demo.seleniumeasy.com/\"",
+									"offset": 18
+								}
+							],
+							"location": "steps.NavigationSteps.iNavigateToThePage(java.lang.String)"
+						},
+						"keyword": "Given "
+					},
+					{
+						"result": {
+							"duration": 7000400,
+							"status": "passed"
+						},
+						"line": 5,
+						"name": "user is on selenium easy homePage verifying page title",
+						"match": {
+							"location": "steps.SeleniumEasyHomePageSteps.user_is_on_selenium_easy_home_page_verifying_page_title()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 468143200,
+							"status": "passed"
+						},
+						"line": 6,
+						"name": "user navigate to Simple Form Demo page",
+						"match": {
+							"location": "steps.SeleniumEasyHomePageSteps.user_navigate_to_Simple_Form_Demo_page()"
+						},
+						"keyword": "When "
+					},
+					{
+						"result": {
+							"duration": 22759300,
+							"status": "passed"
+						},
+						"line": 7,
+						"name": "user verifys simple form demo page title",
+						"match": {
+							"location": "steps.SeleniumEasySimpleFormDemoSteps.user_verifys_simple_form_demo_page_title()"
+						},
+						"keyword": "And "
+					}
+				]
+			},
+			{
+				"start_timestamp": "2023-09-21T07:10:40.737Z",
+				"before": [
+					{
+						"result": {
+							"duration": 28391999100,
+							"status": "passed"
+						},
+						"match": {
+							"location": "utils.HooksUtils.before()"
+						}
+					}
+				],
+				"line": 23,
+				"name": "Verify two input fild in selenium easy simple form demo page features",
+				"description": "",
+				"id": "verify-selenium-easy-simple-form-demo-page-features;verify-two-input-fild-in-selenium-easy-simple-form-demo-page-features;;2",
+				"after": [
+					{
+						"result": {
+							"duration": 1494171800,
+							"status": "passed"
+						},
+						"match": {
+							"location": "utils.HooksUtils.after()"
+						}
+					}
+				],
+				"type": "scenario",
+				"keyword": "Scenario Outline",
+				"steps": [
+					{
+						"result": {
+							"duration": 240900000,
+							"status": "passed"
+						},
+						"line": 17,
+						"name": "user enters 10 and 15 in two input field text box",
+						"match": {
+							"arguments": [
+								{
+									"val": "10",
+									"offset": 12
+								},
+								{
+									"val": "15",
+									"offset": 19
+								}
+							],
+							"location": "steps.SeleniumEasySimpleFormDemoSteps.user_enters_and_in_two_input_field_text_box(int,int)"
+						},
+						"keyword": "Then "
+					},
+					{
+						"result": {
+							"duration": 82481100,
+							"status": "passed"
+						},
+						"line": 18,
+						"name": "user clicks on two input field get total button",
+						"match": {
+							"location": "steps.SeleniumEasySimpleFormDemoSteps.user_clicks_on_get_total_button()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 37933800,
+							"status": "passed"
+						},
+						"line": 19,
+						"name": "user verifys two input field total message is equal to \"25\"",
+						"match": {
+							"arguments": [
+								{
+									"val": "\"25\"",
+									"offset": 55
+								}
+							],
+							"location": "steps.SeleniumEasySimpleFormDemoSteps.user_verifys_two_input_field_total_message_is_equal_to(java.lang.String)"
+						},
+						"keyword": "And "
+					}
+				],
+				"tags": [
+					{
+						"name": "@Test"
+					}
+				]
+			},
+			{
+				"line": 3,
+				"name": "User navigates and verifys title",
+				"description": "",
+				"type": "background",
+				"keyword": "Background",
+				"steps": [
+					{
+						"result": {
+							"duration": 31013868100,
+							"status": "passed"
+						},
+						"line": 4,
+						"name": "I navigate to the \"http://demo.seleniumeasy.com/\" page",
+						"match": {
+							"arguments": [
+								{
+									"val": "\"http://demo.seleniumeasy.com/\"",
+									"offset": 18
+								}
+							],
+							"location": "steps.NavigationSteps.iNavigateToThePage(java.lang.String)"
+						},
+						"keyword": "Given "
+					},
+					{
+						"result": {
+							"duration": 323357700,
+							"status": "passed"
+						},
+						"line": 5,
+						"name": "user is on selenium easy homePage verifying page title",
+						"match": {
+							"location": "steps.SeleniumEasyHomePageSteps.user_is_on_selenium_easy_home_page_verifying_page_title()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 4538728300,
+							"status": "passed"
+						},
+						"line": 6,
+						"name": "user navigate to Simple Form Demo page",
+						"match": {
+							"location": "steps.SeleniumEasyHomePageSteps.user_navigate_to_Simple_Form_Demo_page()"
+						},
+						"keyword": "When "
+					},
+					{
+						"result": {
+							"duration": 104306100,
+							"status": "passed"
+						},
+						"line": 7,
+						"name": "user verifys simple form demo page title",
+						"match": {
+							"location": "steps.SeleniumEasySimpleFormDemoSteps.user_verifys_simple_form_demo_page_title()"
+						},
+						"keyword": "And "
+					}
+				]
+			},
+			{
+				"start_timestamp": "2023-09-21T07:10:40.737Z",
+				"before": [
+					{
+						"result": {
+							"duration": 28391999100,
+							"status": "passed"
+						},
+						"match": {
+							"location": "utils.HooksUtils.before()"
+						}
+					}
+				],
+				"line": 24,
+				"name": "Verify two input fild in selenium easy simple form demo page features",
+				"description": "",
+				"id": "verify-selenium-easy-simple-form-demo-page-features;verify-two-input-fild-in-selenium-easy-simple-form-demo-page-features;;3",
+				"after": [
+					{
+						"result": {
+							"duration": 7579766500,
+							"status": "passed"
+						},
+						"match": {
+							"location": "utils.HooksUtils.after()"
+						}
+					}
+				],
+				"type": "scenario",
+				"keyword": "Scenario Outline",
+				"steps": [
+					{
+						"result": {
+							"duration": 720944500,
+							"status": "passed"
+						},
+						"line": 17,
+						"name": "user enters 5845 and 3783 in two input field text box",
+						"match": {
+							"arguments": [
+								{
+									"val": "5845",
+									"offset": 12
+								},
+								{
+									"val": "3783",
+									"offset": 21
+								}
+							],
+							"location": "steps.SeleniumEasySimpleFormDemoSteps.user_enters_and_in_two_input_field_text_box(int,int)"
+						},
+						"keyword": "Then "
+					},
+					{
+						"result": {
+							"duration": 551089800,
+							"status": "passed"
+						},
+						"line": 18,
+						"name": "user clicks on two input field get total button",
+						"match": {
+							"location": "steps.SeleniumEasySimpleFormDemoSteps.user_clicks_on_get_total_button()"
+						},
+						"keyword": "And "
+					},
+					{
+						"result": {
+							"duration": 86160400,
+							"status": "passed"
+						},
+						"line": 19,
+						"name": "user verifys two input field total message is equal to \"9628\"",
+						"match": {
+							"arguments": [
+								{
+									"val": "\"9628\"",
+									"offset": 55
+								}
+							],
+							"location": "steps.SeleniumEasySimpleFormDemoSteps.user_verifys_two_input_field_total_message_is_equal_to(java.lang.String)"
+						},
+						"keyword": "And "
+					}
+				],
+				"tags": [
+					{
+						"name": "@Test"
+					}
+				]
+			}
+		],
+		"name": "Verify selenium easy simple form demo page features",
+		"description": "",
+		"id": "verify-selenium-easy-simple-form-demo-page-features",
+		"keyword": "Feature",
+		"uri": "file:src/test/resources/Features/SeleniumEasySimpleFormDemoPage.feature",
+		"tags": []
+	}
+]
