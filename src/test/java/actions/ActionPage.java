@@ -45,6 +45,7 @@ public class ActionPage {
 		}
 	}
 
+	// getTitle
 	public String GetTitle() {
 		return driver.getTitle();
 	}

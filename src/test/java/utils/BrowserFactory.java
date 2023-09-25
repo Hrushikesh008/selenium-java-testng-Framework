@@ -8,7 +8,6 @@ import org.openqa.selenium.edge.EdgeOptions;
 
 public class BrowserFactory extends BaseUtils {
 	public WebDriver driver;
-	HooksUtils hooksUtils;
 
 	public WebDriver WebDriverManager() {
 		readfromxml();
@@ -17,20 +16,19 @@ public class BrowserFactory extends BaseUtils {
 			if (browserName.equalsIgnoreCase("EDGE")) {
 				System.setProperty("webdriver.edge.driver", retrirvrXmlValue("edgeDriverPath"));
 				EdgeOptions options = new EdgeOptions();
-				//options.addArguments("headless");
+				// options.addArguments("headless");
 				options.addArguments("-inprivate");
 				driver = new EdgeDriver(options);
-				System.out.println("Test runing in EdgeDriver");
 			} else if (browserName.equalsIgnoreCase("CHROME")) {
 				System.setProperty("webdriver.chrome.driver", retrirvrXmlValue("chromeDriverPath"));
 				ChromeOptions options = new ChromeOptions();
 				options.addArguments("--incognito");
 				// options.addArguments("--headless");
 				driver = new ChromeDriver(options);
-				System.out.println("Test runing in ChromeDriver");
 			} else {
 				System.out.println("This driver is not supported at the movement");
 			}
+			System.out.println("Test runing in" + browserName + "Driver");
 		}
 		return driver;
 	}

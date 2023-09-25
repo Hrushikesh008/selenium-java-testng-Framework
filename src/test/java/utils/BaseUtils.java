@@ -21,10 +21,12 @@ public class BaseUtils implements ConstantFile {
 	Document doc;
 	Properties p = new Properties();
 	private String value;
-	private final String CSV_File_Path = "src/test/resources/SeleniumEasyFormInputData.csv";
+	private String CSV_File_Path = "src/test/resources/SeleniumEasyFormInputData.csv";
+	private String properties_File_Path = "src/test/java/config/properties.xml";
+	private String testData_File_Path = "src/test/resources/testData.properties";
 
 	public void readfromxml() {
-		file = new File(System.getProperty("user.dir") + "/src/test/java/config/properties.xml");
+		file = new File(System.getProperty("user.dir") + properties_File_Path);
 		SAXReader reader = new SAXReader();
 		try {
 			doc = reader.read(file);
@@ -50,7 +52,7 @@ public class BaseUtils implements ConstantFile {
 
 	public Properties getProperties() {
 		try {
-			File file = new File("src/test/resources/testData.properties");
+			File file = new File(testData_File_Path);
 			FileReader reader = new FileReader(file);
 			((Properties) p).load(reader);
 		} catch (IOException ex) {
