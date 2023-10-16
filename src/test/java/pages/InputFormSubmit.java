@@ -19,6 +19,7 @@ public class InputFormSubmit extends ActionPage {
 	private int errerExpacted;
 	private By Send;
 	private By error;
+	private By inputValuePD;
 
 	public InputFormSubmit(BrowserFactory webDriver) {
 		super(webDriver);
@@ -26,11 +27,8 @@ public class InputFormSubmit extends ActionPage {
 		this.errerExpacted = 0;
 		this.Send = By.xpath("//button[@class='btn btn-default']");
 		this.error = By.xpath("//div[@class='form-group has-feedback has-error']//label");
-	}
-
-	private WebElement inputValuePD() {
-		return driver.findElement(By.xpath(
-				"//label[text()='Project Description']/following-sibling::div[@class='col-md-4 inputGroupContainer']/div/textarea"));
+		this.inputValuePD = By.xpath(
+				"//label[text()='Project Description']/following-sibling::div[@class='col-md-4 inputGroupContainer']/div/textarea");
 	}
 
 	private WebElement inputValue(String fieldName) {
@@ -60,7 +58,7 @@ public class InputFormSubmit extends ActionPage {
 				String FieldName = form.get("fieldName");
 				sendKey(inputValue(FieldName), inputValueFromPropertyFile);
 			}
-			sendKey(inputValuePD(), "testpass30");
+			sendKey(driver.findElement(inputValuePD), "testpass30");
 		} catch (Exception e) {
 			Logger.logSevere(e);
 		}
@@ -91,7 +89,7 @@ public class InputFormSubmit extends ActionPage {
 				String FieldName = form.get("fieldName");
 				sendKey((inputValue(FieldName)), DecodedFirstName);
 			}
-			sendKey(inputValuePD(), "testpass30");
+			sendKey(driver.findElement(inputValuePD), "testpass30");
 		} catch (IOException e) {
 			Logger.logSevere(e);
 		}
@@ -110,7 +108,7 @@ public class InputFormSubmit extends ActionPage {
 				String InputValue = form.get("inputValue");
 				sendKey(inputValue(FieldName), InputValue);
 			}
-			sendKey(inputValuePD(), "testpass30");
+			sendKey(driver.findElement(inputValuePD), "testpass30");
 		} catch (Exception e) {
 			Logger.logSevere(e);
 		}

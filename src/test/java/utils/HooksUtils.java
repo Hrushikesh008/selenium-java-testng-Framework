@@ -1,7 +1,5 @@
 package utils;
 
-import org.testng.ITestResult;
-
 import actions.ActionPage;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
@@ -21,10 +19,9 @@ public class HooksUtils {
 	}
 
 	@After
-	public void after(ITestResult result) {
+	public void after() {
 		Logger.info("Running after hooks to close browser");
 		try {
-			actionPage.screenshot(result);
 			driver.WebDriverManager().quit();
 		} catch (Exception e) {
 			throw new AssertionError("Drive quit giving Exception", e);

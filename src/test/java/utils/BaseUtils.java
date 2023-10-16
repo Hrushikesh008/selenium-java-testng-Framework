@@ -21,12 +21,9 @@ public class BaseUtils implements ConstantFile {
 	Document doc;
 	Properties p = new Properties();
 	private String value;
-	private String CSV_File_Path = "src/test/resources/SeleniumEasyFormInputData.csv";
-	private String properties_File_Path = "src/test/java/config/properties.xml";
-	private String testData_File_Path = "src/test/resources/testData.properties";
 
 	public void readfromxml() {
-		file = new File(System.getProperty("user.dir") + properties_File_Path);
+		file = new File(System.getProperty("user.dir") + "/src/test/java/config/properties.xml");
 		SAXReader reader = new SAXReader();
 		try {
 			doc = reader.read(file);
@@ -40,7 +37,7 @@ public class BaseUtils implements ConstantFile {
 	}
 
 	public String CSVReader(String Header) throws IOException {
-		Reader reader = Files.newBufferedReader(Paths.get(CSV_File_Path));
+		Reader reader = Files.newBufferedReader(Paths.get("src/test/resources/SeleniumEasyFormInputData.csv"));
 		@SuppressWarnings({ "deprecation", "resource" })
 		CSVParser csvParser = new CSVParser(reader,
 				CSVFormat.DEFAULT.withFirstRecordAsHeader().withIgnoreHeaderCase().withTrim());
@@ -52,7 +49,7 @@ public class BaseUtils implements ConstantFile {
 
 	public Properties getProperties() {
 		try {
-			File file = new File(testData_File_Path);
+			File file = new File("src/test/resources/testData.properties");
 			FileReader reader = new FileReader(file);
 			((Properties) p).load(reader);
 		} catch (IOException ex) {
