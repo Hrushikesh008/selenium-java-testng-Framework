@@ -23,23 +23,8 @@ public class SeleniumEasyHomePageSteps {
 		assertEquals(Actualtitle, ExpatedTitle);
 	}
 
-	@And("user navigate to input form submit page")
-	public void user_navigate_to_input_form_submit_page() {
-		homePage.clickInputFormSubmit();
-	}
-
-	@And("user navigate to radio buttons page")
-	public void user_navigate_to_radio_buttons_page() {
-		homePage.clickRadioButton();
-	}
-
-	@And("user navigate to range slider page")
-	public void user_navigate_to_range_sliderPage() {
-		homePage.clickDragandDrop();
-	}
-
-	@And("user navigate to Simple Form Demo page")
-	public void user_navigate_to_Simple_Form_Demo_page() {
-		homePage.clickSimpleFormDemo();
+	@And("user navigate to {string} page by clicking {string} dropdown")
+	public void user_navigate_to_input_form_submit_page(String dropdown, String SubDropdown) {
+		homePage.clickDropdown(dropdown, SubDropdown);
 	}
 }

@@ -3,7 +3,7 @@ Feature: Verify selenium easy radio buttons page features
   Background: User navigates and verifys title
     Given I navigate to the "http://demo.seleniumeasy.com/" page
     And user is on selenium easy homePage verifying page title
-    And user navigate to radio buttons page
+    And user navigate to "Input Forms" page by clicking "Radio Buttons Demo" dropdown
     And user verifys radio buttons page title
 
   @Test

@@ -3,7 +3,7 @@ Feature: Verify selenium easy simple form demo page features
   Background: User navigates and verifys title
     Given I navigate to the "http://demo.seleniumeasy.com/" page
     And user is on selenium easy homePage verifying page title
-    When user navigate to Simple Form Demo page
+    And user navigate to "Input Forms" page by clicking "Simple Form Demo" dropdown
     And user verifys simple form demo page title
 
   @Test
@@ -18,7 +18,7 @@ Feature: Verify selenium easy simple form demo page features
     And user clicks on two input field get total button
     And user verifys two input field total message is equal to "<result>"
 
-    Examples: 
+    Examples:
       | valueA | valueB | result |
       |     10 |     15 |     25 |
       |   5845 |   3783 |   9628 |

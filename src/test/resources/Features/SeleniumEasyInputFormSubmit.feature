@@ -3,7 +3,7 @@ Feature: Verify selenium easy InputFormSubmitPage features
   Background: User navigates and verifys title
     Given I navigate to the "http://demo.seleniumeasy.com/" page
     And user is on selenium easy homePage verifying page title
-    And user navigate to input form submit page
+    And user navigate to "Input Forms" page by clicking "Input Form Submit" dropdown
     And user verifys input form submit page title
 
   @Test
