@@ -1,9 +1,9 @@
 Feature: Verify selenium easy range slider page features
 
   Background: User navigates and verifys title
-    Given I navigate to the "http://demo.seleniumeasy.com/" page
+    Given user navigate to the "http://demo.seleniumeasy.com/" page
     And user is on selenium easy homePage verifying page title
-    And user navigate to "Progress Bars" page by clicking "Drag & Drop Sliders" dropdown
+    And user clicks on dropdown "Progress Bars" to click sub dropdown "Drag & Drop Sliders"
     And user verifys range slider page title
 
   @Test

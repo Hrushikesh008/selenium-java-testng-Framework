@@ -23,8 +23,8 @@ public class SeleniumEasyHomePageSteps {
 		assertEquals(Actualtitle, ExpatedTitle);
 	}
 
-	@And("user navigate to {string} page by clicking {string} dropdown")
-	public void user_navigate_to_input_form_submit_page(String dropdown, String SubDropdown) {
+	@And("user clicks on dropdown {string} to click sub dropdown {string}")
+	public void user_clicks_on_input_dropdown(String dropdown, String SubDropdown) {
 		homePage.clickDropdown(dropdown, SubDropdown);
 	}
 }

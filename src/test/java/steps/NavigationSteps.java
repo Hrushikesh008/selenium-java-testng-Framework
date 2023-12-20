@@ -11,8 +11,8 @@ public class NavigationSteps {
 		this.actionPage = new ActionPage(webDriver);
 	}
 
-	@Given("I navigate to the {string} page")
-	public void iNavigateToThePage(String pageUrl) {
+	@Given("user navigate to the {string} page")
+	public void userNavigateToThePage(String pageUrl) {
 		this.actionPage.visit(pageUrl);
 	}
 }

@@ -138,13 +138,15 @@ public class ActionPage {
 	public void higlightElement(WebElement element) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red');", element);
-		js.executeScript("arguments[0].removeAttribute('style', 'background: yellow; border: 2px solid red;');", element);
+		js.executeScript("arguments[0].removeAttribute('style', 'background: yellow; border: 2px solid red;');",
+				element);
 	}
 
 	public void higlightElement(By element) {
 		JavascriptExecutor js = (JavascriptExecutor) driver;
 		js.executeScript("arguments[0].setAttribute('style', 'background: yellow; border: 2px solid red;');", element);
-		js.executeScript("arguments[0].removeAttribute('style', 'background: yellow; border: 2px solid red;');", element);
+		js.executeScript("arguments[0].removeAttribute('style', 'background: yellow; border: 2px solid red;');",
+				element);
 	}
 
 	// others

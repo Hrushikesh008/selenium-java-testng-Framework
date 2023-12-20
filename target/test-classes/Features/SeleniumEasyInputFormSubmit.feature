@@ -1,9 +1,9 @@
 Feature: Verify selenium easy InputFormSubmitPage features
 
   Background: User navigates and verifys title
-    Given I navigate to the "http://demo.seleniumeasy.com/" page
+    Given user navigate to the "http://demo.seleniumeasy.com/" page
     And user is on selenium easy homePage verifying page title
-    And user navigate to "Input Forms" page by clicking "Input Form Submit" dropdown
+    And user clicks on dropdown "Input Forms" to click sub dropdown "Input Form Submit"
     And user verifys input form submit page title
 
   @Test
@@ -36,7 +36,7 @@ Feature: Verify selenium easy InputFormSubmitPage features
 
   @Test
   Scenario: Verify selenium easy input form submit page features cucumber data table
-    When user fills input in text box
+    When user fills input in text box from data table
       | fieldName  | inputValue       |
       | First Name | Muhammad         |
       | Last Name  | Ali              |
@@ -50,7 +50,7 @@ Feature: Verify selenium easy InputFormSubmitPage features
 
   @Test
   Scenario Outline: Verify error message in selenium easy input form submit page features cucumber data table
-    When user fills input in text box
+    When user fills input in text box from data table
       | fieldName  | inputValue |
       | First Name | M          |
       | Phone #    | 0987654321 |

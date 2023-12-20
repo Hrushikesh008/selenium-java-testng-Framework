@@ -34,8 +34,8 @@ public class SeleniumEasyInputFormSubmitSteps {
 		inputFormSubmit.fillTextinputFromCSVFile(dataTable);
 	}
 
-	@When("user fills input in text box")
-	public void user_fills_input(DataTable dataTable) {
+	@When("user fills input in text box from data table")
+	public void user_fills_input_from_data_table(DataTable dataTable) {
 		inputFormSubmit.fillTextinput(dataTable);
 	}
 
