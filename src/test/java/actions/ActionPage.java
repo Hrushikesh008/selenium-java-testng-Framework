@@ -54,7 +54,7 @@ public class ActionPage {
 	public String getText(WebElement element) {
 		return element.getText();
 	}
-
+	
 	// Assert
 	public void AssertEquals(String expectedValue, String actualValue) {
 		try {
